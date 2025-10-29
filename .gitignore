@@ -1,31 +1,46 @@
-# LaTeX artifacts
+# =========================
+# LaTeX
+# =========================
 *.aux
 *.bbl
-*.blg
 *.bcf
+*.blg
 *.fdb_latexmk
 *.fls
 *.log
-*.out
 *.nav
+*.out
 *.snm
-*.toc
 *.synctex.gz
-main.pdf
+*.toc
 
+# Mantener el PDF final (no lo ignores)
+# main.pdf
+
+# =========================
 # Python
+# =========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.pkl
 
+# =========================
 # Jupyter
+# =========================
 .ipynb_checkpoints/
 
-# VSCode
+# =========================
+# Datos y resultados pesados
+# =========================
+data/raw/
+data/processed/
+results/
+
+# =========================
+# VSCode y sistema
+# =========================
 .vscode/
-
-# Data and results (add exceptions if needed)
-/data/raw/
-/results/
-
-# macOS
 .DS_Store
+Thumbs.db
