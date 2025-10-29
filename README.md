@@ -1,8 +1,9 @@
-# EEGNet-ShallowConvNet
+<<<<<<< HEAD
+# EEGNet_ShallowConvNet_Monografia
 
-Repositorio para el proyecto "EEGNet y Shallow ConvNet".
+Repositorio del trabajo monográfico: comparación de EEGNet y Shallow ConvNet aplicados a señales EEG, con enfoque en biomarcadores de enfermedades neurodegenerativas.
 
-Estructura propuesta:
+Estructura del repositorio:
 
 EEGNet-ShallowConvNet/
 │── README.md
@@ -16,7 +17,7 @@ EEGNet-ShallowConvNet/
 │   │   └── figuras/
 │   ├── presentacion/
 │   │   ├── README.md
-│   │   └── logos/
+    │   │   └── logos/
 │   └── productos/
 │       └── README.md
 │
@@ -25,7 +26,6 @@ EEGNet-ShallowConvNet/
 │   ├── shallowconvnet/
 │   ├── utils/
 │   └── notebooks/
-│   └── README.md
 │
 ├── results/
 │   ├── figuras/
@@ -34,9 +34,9 @@ EEGNet-ShallowConvNet/
 │   └── README.md
 │
 └── data/
-    ├── raw/
-    ├── processed/
-    └── README.md
+        ├── raw/
+        ├── processed/
+        └── README.md
 
 Descripción corta
 
@@ -50,4 +50,5 @@ Cómo contribuir
 
 Licencia
 
+Indica aquí la licencia del proyecto si aplica.
 Indica aquí la licencia del proyecto si aplica.
