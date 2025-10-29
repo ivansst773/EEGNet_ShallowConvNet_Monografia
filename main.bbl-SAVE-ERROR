@@ -1,0 +1,737 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{Ajra2023}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f60feb3741d388c771819b34be9398d3}{%
+           family={Ajra},
+           familyi={A\bibinitperiod},
+           given={Zaineb},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39ce3c66fe9ccd543b0c766f6e8da081}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Binbin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bcc9eab8fe216fd444470faf8b24b63b}{%
+           family={Dray},
+           familyi={D\bibinitperiod},
+           given={Gérard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58a11706446c2a03ba64eeccff781b6f}{%
+           family={Montmain},
+           familyi={M\bibinitperiod},
+           given={Jacky},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8d8acd794211d7d33d6950ad0847cc1}{%
+           family={Perrey},
+           familyi={P\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bfe53097495c967303065b70984960c7}
+      \strng{fullhash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \strng{bibnamehash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \strng{authorbibnamehash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \strng{authornamehash}{bfe53097495c967303065b70984960c7}
+      \strng{authorfullhash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Neurology}
+      \field{title}{Using shallow neural networks with functional connectivity from EEG signals for early diagnosis of Alzheimer's and frontotemporal dementia}
+      \field{volume}{14}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.3389/fneur.2023.1270405
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3389/fneur.2023.1270405
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3389/fneur.2023.1270405
+      \endverb
+    \endentry
+    \entry{dePaula2009}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=457dccd82a6c313426543b7c957eb628}{%
+           family={Paula},
+           familyi={P\bibinitperiod},
+           given={V.\bibnamedelimi J.\bibnamedelimi R.},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=592f9f52c5c655fe23af26fe75dabdb8}{%
+           family={Guimarães},
+           familyi={G\bibinitperiod},
+           given={F.\bibnamedelimi M.},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b97edff5c8d2fee8e8d2d85e71b869b}{%
+           family={Diniz},
+           familyi={D\bibinitperiod},
+           given={B.\bibnamedelimi S.},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32091e115d544e6532519245a885e307}{%
+           family={Forlenza},
+           familyi={F\bibinitperiod},
+           given={O.\bibnamedelimi V.},
+           giveni={O\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8e3d54d9cde8d059585bc210c22fb5e3}
+      \strng{fullhash}{58c1942f66a34afe735d21fbac4c10e0}
+      \strng{bibnamehash}{58c1942f66a34afe735d21fbac4c10e0}
+      \strng{authorbibnamehash}{58c1942f66a34afe735d21fbac4c10e0}
+      \strng{authornamehash}{8e3d54d9cde8d059585bc210c22fb5e3}
+      \strng{authorfullhash}{58c1942f66a34afe735d21fbac4c10e0}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Dementia \& Neuropsychologia}
+      \field{number}{3}
+      \field{title}{Neurobiological pathways to Alzheimer’s disease: Amyloid-beta, tau protein or both}
+      \field{volume}{3}
+      \field{year}{2009}
+      \field{pages}{188\bibrangedash 194}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1590/S1980-57642009DN30300005
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1590/S1980-57642009DN30300005
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1590/S1980-57642009DN30300005
+      \endverb
+    \endentry
+    \entry{Kay1998}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=19c66c9bb8003666a723e9405355c007}{%
+           family={Kay},
+           familyi={K\bibinitperiod},
+           given={Steven\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{19c66c9bb8003666a723e9405355c007}
+      \strng{fullhash}{19c66c9bb8003666a723e9405355c007}
+      \strng{bibnamehash}{19c66c9bb8003666a723e9405355c007}
+      \strng{authorbibnamehash}{19c66c9bb8003666a723e9405355c007}
+      \strng{authornamehash}{19c66c9bb8003666a723e9405355c007}
+      \strng{authorfullhash}{19c66c9bb8003666a723e9405355c007}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780135041352}
+      \field{title}{Fundamentals of Statistical Signal Processing, Volume II: Detection Theory}
+      \field{year}{1998}
+      \verb{urlraw}
+      \verb https://www.worldcat.org/title/39135645
+      \endverb
+      \verb{url}
+      \verb https://www.worldcat.org/title/39135645
+      \endverb
+    \endentry
+    \entry{Lawhern2018}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=e3b05d6d858046158dcce73e1d4bb4fc}{%
+           family={Lawhern},
+           familyi={L\bibinitperiod},
+           given={V.\bibnamedelimi J.},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6258707e93f66987fce54f1f37ab70a2}{%
+           family={Solon},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c976a00041a4f9ee3d50bd7dcb451ed8}{%
+           family={Waytowich},
+           familyi={W\bibinitperiod},
+           given={N.\bibnamedelimi R.},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=280d0a54981d3c1b451aea16e082bdce}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b9f844a3024b7d4e1cb94036dc9815b}{%
+           family={Hung},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5cfa8b5ae3b3d431ed0b7fcd10bbf69}{%
+           family={Lance},
+           familyi={L\bibinitperiod},
+           given={B.\bibnamedelimi J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0475f843d9ec06028a7e4789f71f6cd7}
+      \strng{fullhash}{3152643a08eed2690636c28e99b9336c}
+      \strng{bibnamehash}{3152643a08eed2690636c28e99b9336c}
+      \strng{authorbibnamehash}{3152643a08eed2690636c28e99b9336c}
+      \strng{authornamehash}{0475f843d9ec06028a7e4789f71f6cd7}
+      \strng{authorfullhash}{3152643a08eed2690636c28e99b9336c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Neural Engineering}
+      \field{number}{5}
+      \field{title}{EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces}
+      \field{volume}{15}
+      \field{year}{2018}
+      \field{pages}{056013}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1741-2552/aace8c
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/1741-2552/aace8c
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/1741-2552/aace8c
+      \endverb
+    \endentry
+    \entry{Schirrmeister2017}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=d2c2e216d96c2fe1c9a84e1965021b05}{%
+           family={Schirrmeister},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e130f1136455fce32a2207c1cbb91997}{%
+           family={Springenberg},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=477a52f555158628b33f67c88f541850}{%
+           family={Fiederer},
+           familyi={F\bibinitperiod},
+           given={L.\bibnamedelimi D.\bibnamedelimi J.},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b93d7048f1bf59cadfad1401efc3bf7}{%
+           family={Glasstetter},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0a0fb029738d402caad28a696184e64}{%
+           family={Eggensperger},
+           familyi={E\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a50ca463b887b4761323958d2791c4d}{%
+           family={Tangermann},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4db2b09973c88dfc6c987ed53d89c9e5}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bce2faa6685176847af3844f1c3dfef2}{%
+           family={Burgard},
+           familyi={B\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48fdeab09a17c7b94d5ee3da3cf7125a}{%
+           family={Ball},
+           familyi={B\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7f41bfd1bd9c1f1f6967d9a416493718}
+      \strng{fullhash}{e28bde29da4461d92ff9deaf1314dde7}
+      \strng{bibnamehash}{e28bde29da4461d92ff9deaf1314dde7}
+      \strng{authorbibnamehash}{e28bde29da4461d92ff9deaf1314dde7}
+      \strng{authornamehash}{7f41bfd1bd9c1f1f6967d9a416493718}
+      \strng{authorfullhash}{e28bde29da4461d92ff9deaf1314dde7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human Brain Mapping}
+      \field{number}{11}
+      \field{title}{Deep learning with convolutional neural networks for EEG decoding and visualization}
+      \field{volume}{38}
+      \field{year}{2017}
+      \field{pages}{5391\bibrangedash 5420}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1002/hbm.23730
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1002/hbm.23730
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1002/hbm.23730
+      \endverb
+    \endentry
+    \entry{Tolnay1999}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=594c5c008ab90ee66e7539197a95f2ce}{%
+           family={Tolnay},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2ab5cea41f0a20031b83563cec70078}{%
+           family={Probst},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{fullhash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{bibnamehash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{authorbibnamehash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{authornamehash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{authorfullhash}{0f7c094fff02d427117f958f564ab34b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuropathology and Applied Neurobiology}
+      \field{number}{3}
+      \field{title}{Tau protein pathology in Alzheimer's disease and related disorders}
+      \field{volume}{25}
+      \field{year}{1999}
+      \field{pages}{171\bibrangedash 187}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1046/j.1365-2990.1999.00188.x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1046/j.1365-2990.1999.00188.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1046/j.1365-2990.1999.00188.x
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{Ajra2023}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f60feb3741d388c771819b34be9398d3}{%
+           family={Ajra},
+           familyi={A\bibinitperiod},
+           given={Zaineb},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39ce3c66fe9ccd543b0c766f6e8da081}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Binbin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bcc9eab8fe216fd444470faf8b24b63b}{%
+           family={Dray},
+           familyi={D\bibinitperiod},
+           given={Gérard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58a11706446c2a03ba64eeccff781b6f}{%
+           family={Montmain},
+           familyi={M\bibinitperiod},
+           given={Jacky},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8d8acd794211d7d33d6950ad0847cc1}{%
+           family={Perrey},
+           familyi={P\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bfe53097495c967303065b70984960c7}
+      \strng{fullhash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \strng{bibnamehash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \strng{authorbibnamehash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \strng{authornamehash}{bfe53097495c967303065b70984960c7}
+      \strng{authorfullhash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Neurology}
+      \field{title}{Using shallow neural networks with functional connectivity from EEG signals for early diagnosis of Alzheimer's and frontotemporal dementia}
+      \field{volume}{14}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.3389/fneur.2023.1270405
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3389/fneur.2023.1270405
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3389/fneur.2023.1270405
+      \endverb
+    \endentry
+    \entry{dePaula2009}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=457dccd82a6c313426543b7c957eb628}{%
+           family={Paula},
+           familyi={P\bibinitperiod},
+           given={V.\bibnamedelimi J.\bibnamedelimi R.},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=592f9f52c5c655fe23af26fe75dabdb8}{%
+           family={Guimarães},
+           familyi={G\bibinitperiod},
+           given={F.\bibnamedelimi M.},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b97edff5c8d2fee8e8d2d85e71b869b}{%
+           family={Diniz},
+           familyi={D\bibinitperiod},
+           given={B.\bibnamedelimi S.},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32091e115d544e6532519245a885e307}{%
+           family={Forlenza},
+           familyi={F\bibinitperiod},
+           given={O.\bibnamedelimi V.},
+           giveni={O\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8e3d54d9cde8d059585bc210c22fb5e3}
+      \strng{fullhash}{58c1942f66a34afe735d21fbac4c10e0}
+      \strng{bibnamehash}{58c1942f66a34afe735d21fbac4c10e0}
+      \strng{authorbibnamehash}{58c1942f66a34afe735d21fbac4c10e0}
+      \strng{authornamehash}{8e3d54d9cde8d059585bc210c22fb5e3}
+      \strng{authorfullhash}{58c1942f66a34afe735d21fbac4c10e0}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Dementia \& Neuropsychologia}
+      \field{number}{3}
+      \field{title}{Neurobiological pathways to Alzheimer’s disease: Amyloid-beta, tau protein or both}
+      \field{volume}{3}
+      \field{year}{2009}
+      \field{pages}{188\bibrangedash 194}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1590/S1980-57642009DN30300005
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1590/S1980-57642009DN30300005
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1590/S1980-57642009DN30300005
+      \endverb
+    \endentry
+    \entry{Kay1998}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=19c66c9bb8003666a723e9405355c007}{%
+           family={Kay},
+           familyi={K\bibinitperiod},
+           given={Steven\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{19c66c9bb8003666a723e9405355c007}
+      \strng{fullhash}{19c66c9bb8003666a723e9405355c007}
+      \strng{bibnamehash}{19c66c9bb8003666a723e9405355c007}
+      \strng{authorbibnamehash}{19c66c9bb8003666a723e9405355c007}
+      \strng{authornamehash}{19c66c9bb8003666a723e9405355c007}
+      \strng{authorfullhash}{19c66c9bb8003666a723e9405355c007}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780135041352}
+      \field{title}{Fundamentals of Statistical Signal Processing, Volume II: Detection Theory}
+      \field{year}{1998}
+      \verb{urlraw}
+      \verb https://www.worldcat.org/title/39135645
+      \endverb
+      \verb{url}
+      \verb https://www.worldcat.org/title/39135645
+      \endverb
+    \endentry
+    \entry{Lawhern2018}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=e3b05d6d858046158dcce73e1d4bb4fc}{%
+           family={Lawhern},
+           familyi={L\bibinitperiod},
+           given={V.\bibnamedelimi J.},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6258707e93f66987fce54f1f37ab70a2}{%
+           family={Solon},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c976a00041a4f9ee3d50bd7dcb451ed8}{%
+           family={Waytowich},
+           familyi={W\bibinitperiod},
+           given={N.\bibnamedelimi R.},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=280d0a54981d3c1b451aea16e082bdce}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b9f844a3024b7d4e1cb94036dc9815b}{%
+           family={Hung},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5cfa8b5ae3b3d431ed0b7fcd10bbf69}{%
+           family={Lance},
+           familyi={L\bibinitperiod},
+           given={B.\bibnamedelimi J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0475f843d9ec06028a7e4789f71f6cd7}
+      \strng{fullhash}{3152643a08eed2690636c28e99b9336c}
+      \strng{bibnamehash}{3152643a08eed2690636c28e99b9336c}
+      \strng{authorbibnamehash}{3152643a08eed2690636c28e99b9336c}
+      \strng{authornamehash}{0475f843d9ec06028a7e4789f71f6cd7}
+      \strng{authorfullhash}{3152643a08eed2690636c28e99b9336c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Neural Engineering}
+      \field{number}{5}
+      \field{title}{EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces}
+      \field{volume}{15}
+      \field{year}{2018}
+      \field{pages}{056013}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1741-2552/aace8c
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/1741-2552/aace8c
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/1741-2552/aace8c
+      \endverb
+    \endentry
+    \entry{Schirrmeister2017}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=d2c2e216d96c2fe1c9a84e1965021b05}{%
+           family={Schirrmeister},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e130f1136455fce32a2207c1cbb91997}{%
+           family={Springenberg},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=477a52f555158628b33f67c88f541850}{%
+           family={Fiederer},
+           familyi={F\bibinitperiod},
+           given={L.\bibnamedelimi D.\bibnamedelimi J.},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b93d7048f1bf59cadfad1401efc3bf7}{%
+           family={Glasstetter},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0a0fb029738d402caad28a696184e64}{%
+           family={Eggensperger},
+           familyi={E\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a50ca463b887b4761323958d2791c4d}{%
+           family={Tangermann},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4db2b09973c88dfc6c987ed53d89c9e5}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bce2faa6685176847af3844f1c3dfef2}{%
+           family={Burgard},
+           familyi={B\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48fdeab09a17c7b94d5ee3da3cf7125a}{%
+           family={Ball},
+           familyi={B\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7f41bfd1bd9c1f1f6967d9a416493718}
+      \strng{fullhash}{e28bde29da4461d92ff9deaf1314dde7}
+      \strng{bibnamehash}{e28bde29da4461d92ff9deaf1314dde7}
+      \strng{authorbibnamehash}{e28bde29da4461d92ff9deaf1314dde7}
+      \strng{authornamehash}{7f41bfd1bd9c1f1f6967d9a416493718}
+      \strng{authorfullhash}{e28bde29da4461d92ff9deaf1314dde7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human Brain Mapping}
+      \field{number}{11}
+      \field{title}{Deep learning with convolutional neural networks for EEG decoding and visualization}
+      \field{volume}{38}
+      \field{year}{2017}
+      \field{pages}{5391\bibrangedash 5420}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1002/hbm.23730
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1002/hbm.23730
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1002/hbm.23730
+      \endverb
+    \endentry
+    \entry{Tolnay1999}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=594c5c008ab90ee66e7539197a95f2ce}{%
+           family={Tolnay},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2ab5cea41f0a20031b83563cec70078}{%
+           family={Probst},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{fullhash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{bibnamehash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{authorbibnamehash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{authornamehash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{authorfullhash}{0f7c094fff02d427117f958f564ab34b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuropathology and Applied Neurobiology}
+      \field{number}{3}
+      \field{title}{Tau protein pathology in Alzheimer's disease and related disorders}
+      \field{volume}{25}
+      \field{year}{1999}
+      \field{pages}{171\bibrangedash 187}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1046/j.1365-2990.1999.00188.x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1046/j.1365-2990.1999.00188.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1046/j.1365-2990.1999.00188.x
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

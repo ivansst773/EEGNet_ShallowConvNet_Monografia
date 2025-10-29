@@ -1,0 +1,31 @@
+# LaTeX artifacts
+*.aux
+*.bbl
+*.blg
+*.bcf
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.nav
+*.snm
+*.toc
+*.synctex.gz
+main.pdf
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Data and results (add exceptions if needed)
+/data/raw/
+/results/
+
+# macOS
+.DS_Store
