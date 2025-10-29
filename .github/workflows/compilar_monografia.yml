@@ -1,0 +1,29 @@
+name: Compilar monografía LaTeX
+
+on:
+  push:
+    paths:
+      - 'docs/monografia/**'
+      - '.github/workflows/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v3
+
+    - name: Instalar TeX Live
+      run: sudo apt-get update && sudo apt-get install -y texlive-full
+
+    - name: Compilar LaTeX
+      working-directory: docs/monografia
+      run: |
+        latexmk -pdf -interaction=nonstopmode main.tex
+
+    - name: Subir PDF compilado
+      uses: actions/upload-artifact@v3
+      with:
+        name: Monografia-PDF
+        path: docs/monografia/main.pdf
