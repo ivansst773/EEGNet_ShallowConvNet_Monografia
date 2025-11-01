@@ -8,7 +8,11 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{tikz}      % necesario para \foreach
+\usetikzlibrary{positioning}
 \usepackage{pgffor}    % necesario para el bucle
+\usepackage{comment}
+\usepackage{xurl} % permite cortar URLs en cualquier punto
+\usepackage{multicol}
 
 % Bibliografía con biblatex (APA) y Biber
 \usepackage[backend=biber,style=apa]{biblatex}
@@ -78,6 +82,38 @@
   \end{tikzpicture}%
 }
 
+\newcommand{\frametitleconescudo}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex,leftskip=0.5ex,rightskip=1ex]{frametitle}%
+    \usebeamerfont{frametitle}\insertframetitle%
+  \end{beamercolorbox}%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north east, xshift=0.1cm, yshift=-0.1cm] at (current page.north east) {%
+      \includegraphics[width=0.12\paperwidth]{figuras/image_reducido.png}%
+    };
+  \end{tikzpicture}%
+}
+
+\newcommand{\frametitleOutline}{%
+  % Rectángulo sólido arriba (ajusta el grosor con el valor negativo)
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[frametitle.bg] (current page.north west) rectangle ([yshift=-5ex]current page.north east);
+  \end{tikzpicture}  
+
+  % Caja del título
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1ex,dp=1ex,leftskip=0.5ex,rightskip=1ex]{frametitle}%
+    \usebeamerfont{frametitle}\insertframetitle%
+  \end{beamercolorbox}%
+
+  % Escudo en la esquina superior derecha
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north east, xshift=0.1cm, yshift=-0.2cm] at (current page.north east) {%
+      \includegraphics[width=0.14\paperwidth]{figuras/image_reducido.png}%
+    };
+  \end{tikzpicture}%
+}
+
+
+
 % Empezar con el estilo de frametitle por defecto (sin barra de navegación)
 \setbeamertemplate{frametitle}[default]
 
@@ -98,16 +134,22 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
   \end{center}
 \end{frame}
 
+
+
 % ---- Outline ----
+\setbeamertemplate{frametitle}{\frametitleOutline}
 \begin{frame}{Outline}
+  \scriptsize   % o \tiny si necesitas aún más pequeño
   \tableofcontents
 \end{frame}
+
+
 % Activar la barra de navegación y el escudo a partir de aquí (diapositiva 3 en adelante)
 \setbeamertemplate{frametitle}{\customframetitle}
 
-% ---- Motivación ----
-\section{Motivación}
-\begin{frame}{Motivación}
+% ---- Motivation ----
+\section{Motivation}
+\begin{frame}{Motivation}
 \begin{itemize}
   \item \textbf{Accesibilidad clínica}: PET tau y LCR son costosos e invasivos, se requiere biomarcador no invasivo y repetible \cite{dePaula2009}
   \item \textbf{Huella funcional}: La propagación de tau altera ritmos y conectividad neuronal, el EEG puede capturar esos cambios \cite{Tolnay1999}
@@ -115,9 +157,9 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 \end{itemize}
 \end{frame}
 
-% ---- Problema ----
-\section{Problema}
-\begin{frame}{Problema}
+% ---- Problem ----
+\section{Problem}
+\begin{frame}{Problem}
 \begin{itemize}
   \item \textbf{General}: No existe un biomarcador funcional, no invasivo y accesible para detectar progresión de Alzheimer vinculada a tau \cite{dePaula2009}
   \item \textbf{Específico}: Validar si EEGNet y Shallow ConvNet identifican patrones EEG asociados a propagación de tau y progresión clínica \cite{Lawhern2018,Schirrmeister2017}
@@ -125,9 +167,9 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 \end{itemize}
 \end{frame}
 
-% ---- Contexto ----
-\section{Contexto del problema}
-\begin{frame}{Contexto del problema}
+% ---- Problem context ----
+\section{Problem context}
+\begin{frame}{Problem context}
 \begin{itemize}
   \item \textbf{Teoría de detección}: Maximizar \(P_{D}\) para un \(P_{FA}\) dado, evaluar curvas ROC y umbrales \cite{Kay1998}
   \item \textbf{Neurobiología de tau}: Hiperfosforilación, ovillos neurofibrilares y patrón hipocampo→entorhinal→cortezas asociativas \cite{Tolnay1999}
@@ -135,9 +177,9 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 \end{itemize}
 \end{frame}
 
-% ---- Estado del arte ----
-\section{Estado del arte}
-\begin{frame}{Estado del arte}
+% ---- State of the art ----
+\section{State of the art}
+\begin{frame}{State of the art}
 \begin{itemize}
   \item \textbf{EEGNet}: CNN compacta con convoluciones separables, generaliza con pocos datos \cite{Lawhern2018}
   \item \textbf{Shallow ConvNet}: Arquitectura superficial para ritmos mu/beta, baseline reproducible en BCI \cite{Schirrmeister2017}
@@ -146,9 +188,9 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 \end{itemize}
 \end{frame}
 
-% ---- Novedad ----
-\section{Novedad}
-\begin{frame}{Novedad}
+% ---- Novelty ----
+\section{Novelty}
+\begin{frame}{Novelty}
 \begin{itemize}
   \item \textbf{Innovación}: Unir neurobiología de tau con detección funcional en EEG mediante CNN compactas \cite{Lawhern2018,Ajra2023}
   \item \textbf{Etiqueta del estudio}: Biomarcador EEG funcional para progresión de Alzheimer
@@ -156,9 +198,9 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 \end{itemize}
 \end{frame}
 
-% ---- Objetivos ----
-\section{Objetivos}
-\begin{frame}{Objetivos}
+% ---- Objectives ----
+\section{Objectives}
+\begin{frame}{Objectives}
 \begin{itemize}
   \item \textbf{General}: Desarrollar y validar un modelo EEG (EEGNet vs Shallow) para detectar patrones asociados a tau y progresión de Alzheimer \cite{Lawhern2018,Schirrmeister2017}
   \item \textbf{Específicos}:
@@ -172,9 +214,9 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 \end{frame}
 
 
-% ---- Diseño experimental ----
-\section{Diseño experimental}
-\begin{frame}{Diseño experimental}
+% ---- Experimental design ----
+\section{Experimental design}
+\begin{frame}{Experimental design}
 \begin{itemize}
   \item \textbf{Datos}: EEG multicanal CN/MCI/AD con metadatos clínicos; subcohorte PET/LCR si está disponible \cite{Ajra2023}
   \item \textbf{Entradas}: Señales EEG (C×T), ventanas 2–4 s, normalización; opcional espectrogramas y matrices PLV/PLI \cite{Lawhern2018,Schirrmeister2017}
@@ -188,9 +230,9 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 \end{itemize}
 \end{frame}
 
-% ---- Tres papers ----
+% ---- Papers ----
 \section{Papers}
-\begin{frame}{Tres papers de mapeo con IA}
+\begin{frame}{Papers on EEG mapping with AI}
 \begin{itemize}
   \item \textbf{Lawhern et al. 2018 (EEGNet)}: Multi-paradigma BCI, AUC/kappa, compacto, sensible al preprocesamiento \cite{Lawhern2018}
   \item \textbf{Schirrmeister et al. 2017 (Shallow/DeepConvNet)}: BCI IV-2a, intra- y cross-subject, baseline reproducible, necesita ajuste \cite{Schirrmeister2017}
@@ -198,9 +240,100 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 \end{itemize}
 \end{frame}
 
-% ---- Referencias ----
-\section{Referencias}
-\begin{frame}[allowframebreaks]{Referencias}
+% --- Datasets ---
+\section{Datasets}
+\begin{frame}{Datasets}
+  \begin{itemize}
+    \item EEG clínico CN/MCI/AD (32–64 canales, sistema 10-20).
+    \item Subcohorte con PET/LCR tau (si disponible).
+    \item Validación cruzada por sujeto.
+  \end{itemize}
+\end{frame}
+
+% --- Methodology ---
+
+\section{Methodology}
+\begin{frame}{Methodology}
+\centering
+\scalebox{0.7}{%
+\begin{tikzpicture}[node distance=2cm, auto]
+  \tikzstyle{block} = [rectangle, draw, rounded corners, fill=blue!10,
+                       text centered, minimum height=1cm, minimum width=2.5cm]
+
+  \node[block] (eeg) {EEG Data};
+  \node[block, right=of eeg] (preproc) {Preprocesamiento};
+  \node[block, below right=1cm and 2cm of preproc] (eegnet) {EEGNet};
+  \node[block, above right=1cm and 2cm of preproc] (shallow) {Shallow ConvNet};
+  \node[block, right=of eegnet] (metrics) {Métricas};
+
+  \draw[->, thick] (eeg) -- (preproc);
+  \draw[->, thick] (preproc) -- (eegnet);
+  \draw[->, thick] (preproc) -- (shallow);
+  \draw[->, thick] (eegnet) -- (metrics);
+  \draw[->, thick] (shallow) -- (metrics);
+\end{tikzpicture}
+}
+\end{frame}
+
+% --- Results ---
+\section{Results}
+\begin{frame}{Expected Results}
+  \begin{itemize}
+    \item Métricas: Accuracy, F1, AUC, PD, PFA.
+    \item Mapas de saliencia por canal/banda.
+    \item Comparación EEGNet vs Shallow ConvNet.
+  \end{itemize}
+\end{frame}
+
+% --- Limitations ---
+\section{Limitations}
+\begin{frame}{Limitations}
+  \begin{itemize}
+    \item Variabilidad inter-sujeto en EEG.
+    \item Tamaño reducido de dataset.
+    \item Interpretabilidad limitada de CNN.
+  \end{itemize}
+\end{frame}
+
+% --- Conclusions ---
+\section{Conclusions}
+\begin{frame}{Conclusions}
+  \begin{itemize}
+    \item EEGNet y Shallow ConvNet son candidatos viables para biomarcadores EEG funcionales.
+    \item Posible vínculo con trayectorias tau.
+  \end{itemize}
+\end{frame}
+
+% --- Future work ---
+\section{Future work}
+\begin{frame}{Future work}
+  \begin{itemize}
+    \item Extender a más datasets clínicos.
+    \item Integrar conectividad avanzada (PLV/PLI, GCN).
+    \item Validar con biomarcadores PET/LCR.
+  \end{itemize}
+\end{frame}
+
+% --- Academic products ---
+\begin{frame}{Academic products}
+  \begin{enumerate}
+    \item Monografía de grado.
+    \item Repositorio GitHub con código y datos.
+    \item Presentaciones y bitácora.
+  \end{enumerate}
+\end{frame}
+
+% --- Acknowledgements ---
+\begin{frame}{Acknowledgements}
+  \begin{itemize}
+    \item Universidad Nacional de Colombia.
+    \item Grupo de investigación.
+    \item Profesor Andrés Marino Álvarez Meza, PhD.
+  \end{itemize}
+\end{frame}
+
+% ---- References ----
+\begin{frame}[allowframebreaks]{References}
   \printbibliography
 \end{frame}
 
