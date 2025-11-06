@@ -36,6 +36,7 @@ __pycache__/
 # =========================
 data/raw/
 data/processed/
+data/MNIST/
 results/
 
 # =========================
