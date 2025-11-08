@@ -25,6 +25,8 @@ __pycache__/
 *.pyo
 *.pyd
 *.pkl
+*.egg-info/
+.eggs/
 
 # =========================
 # Jupyter
@@ -47,11 +49,21 @@ results/
 Thumbs.db
 
 # =========================
-# Entornos virtuales y modelos
+# Entornos virtuales y dependencias
 # =========================
 .venv/
 env/
 venv/
+build/
+dist/
+
+# =========================
+# Modelos y checkpoints
+# =========================
 *.pth
 *.pt
+*.ckpt
+*.h5
+*.onnx
 *.log
+*.csv

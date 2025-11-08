@@ -1,0 +1,23 @@
+# Herramientas de desarrollo y documentación
+
+# Jupyter y notebooks
+jupyter
+notebook
+jupyterlab
+
+# Formateo y estilo de código
+black
+flake8
+isort
+
+# Testing
+pytest
+pytest-cov
+
+# Documentación
+sphinx
+sphinx-rtd-theme
+myst-parser
+
+# Utilidades
+pre-commit

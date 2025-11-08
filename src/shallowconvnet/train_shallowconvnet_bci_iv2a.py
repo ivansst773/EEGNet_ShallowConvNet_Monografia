@@ -2,28 +2,37 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from src.utils import load_bci_iv2a
-from src.models import EEGNet
+from src.models import ShallowConvNet
 
-# 1. Cargar datos
+# 1. Selección de dispositivo
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print("Usando dispositivo:", device)
+
+# 2. Cargar datos
 X_tr, y_tr, X_val, y_val, X_eval, y_eval, chans, samples = load_bci_iv2a(subject=1, apply_filter=True)
 
-# 2. Definir modelo
-model = EEGNet(nb_classes=4, Chans=chans, Samples=samples)
+# Mover datos al dispositivo
+X_tr, y_tr = X_tr.to(device), y_tr.to(device)
+X_val, y_val = X_val.to(device), y_val.to(device)
+X_eval, y_eval = X_eval.to(device), y_eval.to(device)
 
-# 3. Configuración de entrenamiento
+# 3. Definir modelo
+model = ShallowConvNet(nb_classes=4, Chans=chans, Samples=samples).to(device)
+
+# 4. Configuración
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-# 4. Smoke test: entrenar unas pocas iteraciones
-for epoch in range(2):  # solo 2 epochs para probar
+# 5. Entrenamiento rápido
+for epoch in range(2):
     optimizer.zero_grad()
-    outputs = model(X_tr[:50])  # subset pequeño
+    outputs = model(X_tr[:50])
     loss = criterion(outputs, y_tr[:50])
     loss.backward()
     optimizer.step()
     print(f"Epoch {epoch+1}, Loss: {loss.item():.4f}")
 
-# 5. Evaluación rápida en validación
+# 6. Validación rápida
 with torch.no_grad():
     val_outputs = model(X_val[:50])
     val_loss = criterion(val_outputs, y_val[:50])
