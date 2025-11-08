@@ -41,6 +41,16 @@ data/processed/
 data/MNIST/
 results/
 
+# Excepciones: permitir README.md o .gitkeep en estas carpetas
+!data/raw/README.md
+!data/raw/BCI_IV_2a/README.md
+!data/processed/README.md
+!data/MNIST/README.md
+!results/README.md
+!results/**/README.md
+!data/raw/.gitkeep
+!results/.gitkeep
+
 # =========================
 # VSCode y sistema
 # =========================
@@ -67,3 +77,7 @@ dist/
 *.onnx
 *.log
 *.csv
+
+# Permitir README.md en carpetas ignoradas
+!data/raw/BCI_IV_2a/README.md
+!results/README.md
