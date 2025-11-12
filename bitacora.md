@@ -88,10 +88,37 @@ Registro de cambios importantes del proyecto.
   - Epoch 2 → Loss: 1.25  
   - Validación inicial → Accuracy: 50%.  
 
----
 
-## 📌 Próximos pasos
-- Optimizar hiperparámetros (learning rate, batch size, número de epochs).  
-- Implementar `DataLoader` para batches.  
-- Guardar métricas y modelos en `results/`.  
-- Extender pipeline al dataset clínico CN/MCI/AD + tau.  
+## 🗓️ 12 de noviembre de 2025
+Se recreó el entorno virtual .venv con Python 3.11 para evitar inconsistencias con Python 3.10.
+
+Se instaló exitosamente PyTorch 2.5.1+cu121, torchvision 0.20.1+cu121, torchaudio 2.5.1+cu121.
+
+Se confirmaron versiones estables:
+
+NumPy 1.26.4
+
+SciPy 1.11.4
+
+MNE 1.10.2
+
+scikit-learn 1.7.2
+
+matplotlib 3.10.7
+
+pandas 2.3.3
+
+Se verificó la detección de la GPU NVIDIA GeForce GTX 1050 con soporte CUDA disponible.
+
+Se resolvió el problema de desincronización entre pip list y import torch al reinstalar todo en el .venv correcto.
+
+El entorno quedó listo para correr los scripts de entrenamiento (train_eegnet_bci_iv2a.py, train_shallowconvnet_bci_iv2a.py) sin errores de librerías.
+
+📌 Próximos pasos
+Ejecutar smoke tests en ambos modelos (EEGNet y ShallowConvNet) con el dataset BCI IV‑2a.
+
+Documentar métricas iniciales en results/.
+
+Ajustar hiperparámetros y preparar entrenamiento completo en todos los sujetos.
+
+Migrar pipeline al dataset clínico CN/MCI/AD + tau.
