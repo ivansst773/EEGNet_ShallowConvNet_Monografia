@@ -114,6 +114,150 @@ Se resolvió el problema de desincronización entre pip list y import torch al r
 
 El entorno quedó listo para correr los scripts de entrenamiento (train_eegnet_bci_iv2a.py, train_shallowconvnet_bci_iv2a.py) sin errores de librerías.
 
+
+**Fecha:** 2025-11-12  
+**Modelo:** EEGNet  
+**Sujeto:** A01  
+**Dispositivo:** GPU (NVIDIA GTX 1050)  
+**Dataset:** BCI Competition IV-2a  
+**Segmentación:** No  
+**Filtro aplicado:** Band-pass 4–40 Hz  
+
+### ⚙️ Configuración
+- Epochs: 2  
+- Batch size: 16  
+- Learning rate: 0.001  
+- Dropout: 0.25  
+- Optimizer: Adam  
+
+### 📊 Resultados
+- **Entrenamiento**
+  - Epoch 1 → Loss: 1.4420
+  - Epoch 2 → Loss: 1.1628
+- **Validación**
+  - Loss final: 1.2149
+  - Accuracy: 50.00 %
+
+### 📝 Observaciones
+- Estratificación: desactivada (clases con <2 muestras)  
+- Loss decreciente, accuracy inicial moderada.  
+- Pipeline estable, sin errores de ejecución.
+
+
+**Fecha:** 2025-11-12 Modelo: 
+**ShallowConvNet Sujeto:** A01 
+**Dispositivo:** GPU (NVIDIA GTX 1050) 
+**Dataset:** BCI Competition IV-2a 
+**Segmentación:** No 
+**Filtro aplicado:** Band-pass 4–40 Hz
+
+⚙️ Configuración
+Epochs: 2
+
+Batch size: 16
+
+Learning rate: 0.001
+
+Dropout: 0.50
+
+Optimizer: Adam
+
+📊 Resultados
+Entrenamiento
+
+Epoch 1 → Loss: 1.6835
+
+Epoch 2 → Loss: 0.8931
+
+Validación
+
+Loss final: 6.1624
+
+Accuracy: 25.00 %
+
+
+## 📊 Comparativa inicial – Smoke tests (BCI IV‑2a, sujeto A01)
+
+| Modelo           | Epochs | Batch Size | Learning Rate | Dropout | Train Loss Final | Val Loss Final | Val Accuracy |
+|------------------|--------|------------|---------------|---------|------------------|----------------|--------------|
+| **EEGNet**       | 2      | 16         | 0.001         | 0.25    | 1.1628           | 1.2149         | 50.00 %      |
+| **ShallowConvNet** | 2    | 16         | 0.001         | 0.50    | 0.8931           | 6.1624         | 25.00 %      |
+
+### 📝 Observaciones rápidas
+- **EEGNet**: más estable entre entrenamiento y validación, accuracy inicial moderada.  
+- **ShallowConvNet**: entrenó bien en train, pero se sobreajustó y no generalizó (val_loss muy alto, accuracy baja).  
+
+### 📈 Gráficas asociadas
+![Loss Comparison](results/figuras/loss_comparison_2025-11-12.png)  
+![Accuracy Comparison](results/figuras/accuracy_comparison_2025-11-12.png)
+ 
+
+## 📊 Comparativa – Smoke tests con segmentación (BCI IV‑2a, sujeto A01)
+
+<table>
+  <thead>
+    <tr>
+      <th>Modelo</th>
+      <th>Epochs</th>
+      <th>Batch Size</th>
+      <th>Learning Rate</th>
+      <th>Dropout</th>
+      <th>Segmentación</th>
+      <th>Train Loss Final</th>
+      <th>Val Loss Final</th>
+      <th>Val Accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>EEGNet</b></td>
+      <td>2</td>
+      <td>16</td>
+      <td>0.001</td>
+      <td>0.25</td>
+      <td style="color:green;">True ✅</td>
+      <td>1.1655</td>
+      <td>1.3394</td>
+      <td style="color:green;"><b>50 %</b></td>
+    </tr>
+    <tr>
+      <td><b>ShallowConvNet</b></td>
+      <td>2</td>
+      <td>16</td>
+      <td>0.001</td>
+      <td>0.50</td>
+      <td style="color:green;">True ✅</td>
+      <td>1.1225</td>
+      <td style="color:red;"><b>6.8614</b></td>
+      <td style="color:orange;"><b>50 %</b></td>
+    </tr>
+  </tbody>
+</table>
+
+### 📝 Observaciones rápidas
+- <b style="color:green;">EEGNet</b>: estable entre entrenamiento y validación, accuracy inicial moderada.  
+- <b style="color:red;">ShallowConvNet</b>: train loss bajó, pero validación muy alta → sobreajuste evidente.  
+- Estratificación desactivada (clases con <2 muestras).  
+- Segmentación activada generó más muestras, pero con pocas epochs aún no se observa mejora clara.  
+
+
+### 📝 Observaciones rápidas
+- **EEGNet**: se mantiene estable entre entrenamiento y validación, con accuracy inicial moderada.  
+- **ShallowConvNet**: aunque el train loss bajó, la validación sigue muy alta → sobreajuste evidente.  
+- Estratificación desactivada (clases con <2 muestras).  
+- Segmentación activada generó más muestras, pero con pocas epochs aún no se observa mejora clara.  
+
+
+📝 Observaciones
+Estratificación: desactivada (clases con <2 muestras).
+
+Train loss decreciente, pero validación muy alta → indica sobreajuste o desbalance en el split.
+
+Accuracy inicial baja, requiere más datos y epochs para estabilizar.
+
+Pipeline estable, sin errores de ejecución.
+
+
 📌 Próximos pasos
 Ejecutar smoke tests en ambos modelos (EEGNet y ShallowConvNet) con el dataset BCI IV‑2a.
 
