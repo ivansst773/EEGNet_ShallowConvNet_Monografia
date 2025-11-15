@@ -115,7 +115,7 @@ Se resolvió el problema de desincronización entre pip list y import torch al r
 El entorno quedó listo para correr los scripts de entrenamiento (train_eegnet_bci_iv2a.py, train_shallowconvnet_bci_iv2a.py) sin errores de librerías.
 
 
-**Fecha:** 2025-11-12  
+## 🗓️  2025-11-12  
 **Modelo:** EEGNet  
 **Sujeto:** A01  
 **Dispositivo:** GPU (NVIDIA GTX 1050)  
@@ -144,7 +144,8 @@ El entorno quedó listo para correr los scripts de entrenamiento (train_eegnet_b
 - Pipeline estable, sin errores de ejecución.
 
 
-**Fecha:** 2025-11-12 Modelo: 
+## 🗓️ 2025-11-12 
+Modelo: 
 **ShallowConvNet Sujeto:** A01 
 **Dispositivo:** GPU (NVIDIA GTX 1050) 
 **Dataset:** BCI Competition IV-2a 
@@ -251,7 +252,7 @@ Accuracy: 25.00 %
 
 📒 Bitácora de Entrenamientos – BCI IV‑2a
 🧪 Smoke tests – BCI IV‑2a (sujeto A01)
-**Fecha:** 2025-11-14 
+## 🗓️ 2025-11-14 
 **Dispositivo:** GPU (GTX 1050) 
 **Segmentación:** No 
 **Filtro:** Band-pass 4–40 Hz 
