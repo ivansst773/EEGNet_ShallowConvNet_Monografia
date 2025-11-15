@@ -2,30 +2,30 @@ import torch
 import torch.nn as nn
 
 class EEGNet(nn.Module):
-    def __init__(self, nb_classes=4, Chans=22, Samples=256):
-        super(EEGNet, self).__init__()
+    def __init__(self, n_channels, n_times, n_classes, dropout=0.25):
+        super().__init__()
         self.firstconv = nn.Sequential(
             nn.Conv2d(1, 16, (1, 64), padding=(0, 32), bias=False),
             nn.BatchNorm2d(16)
         )
         self.depthwiseConv = nn.Sequential(
-            nn.Conv2d(16, 32, (Chans, 1), groups=16, bias=False),
+            nn.Conv2d(16, 32, (n_channels, 1), groups=16, bias=False),
             nn.BatchNorm2d(32),
             nn.ELU(),
             nn.AvgPool2d((1, 4)),
-            nn.Dropout(0.25)
+            nn.Dropout(dropout)
         )
         self.separableConv = nn.Sequential(
             nn.Conv2d(32, 32, (1, 16), padding=(0, 8), bias=False),
             nn.BatchNorm2d(32),
             nn.ELU(),
             nn.AvgPool2d((1, 8)),
-            nn.Dropout(0.25)
+            nn.Dropout(dropout)
         )
-        dummy = torch.zeros(1, 1, Chans, Samples)
+        dummy = torch.zeros(1, 1, n_channels, n_times)
         out = self._forward_features(dummy)
         in_feats = out.view(1, -1).size(1)
-        self.classify = nn.Linear(in_feats, nb_classes)
+        self.classify = nn.Linear(in_feats, n_classes)
 
     def _forward_features(self, x):
         x = self.firstconv(x)
@@ -39,17 +39,17 @@ class EEGNet(nn.Module):
         return self.classify(x)
 
 class ShallowConvNet(nn.Module):
-    def __init__(self, nb_classes=4, Chans=22, Samples=256):
-        super(ShallowConvNet, self).__init__()
+    def __init__(self, n_channels, n_times, n_classes, dropout=0.5):
+        super().__init__()
         self.conv1 = nn.Conv2d(1, 40, (1, 25), bias=False)
-        self.conv2 = nn.Conv2d(40, 40, (Chans, 1), bias=False)
+        self.conv2 = nn.Conv2d(40, 40, (n_channels, 1), bias=False)
         self.batchnorm = nn.BatchNorm2d(40)
         self.pool = nn.AvgPool2d((1, 75), stride=(1, 15))
-        self.dropout = nn.Dropout(0.5)
-        dummy = torch.zeros(1, 1, Chans, Samples)
+        self.dropout = nn.Dropout(dropout)
+        dummy = torch.zeros(1, 1, n_channels, n_times)
         out = self._forward_features(dummy)
         in_feats = out.view(1, -1).size(1)
-        self.fc = nn.Linear(in_feats, nb_classes)
+        self.fc = nn.Linear(in_feats, n_classes)
 
     def _forward_features(self, x):
         x = self.conv1(x)

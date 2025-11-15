@@ -1,23 +1,29 @@
-# Herramientas de desarrollo y documentación
+# --- Herramientas para notebooks y análisis interactivo ---
+jupyter==1.0.0
+notebook==7.2.2
+ipython==8.27.0
+ipywidgets==8.1.2
+jupyterlab==4.2.5
 
-# Jupyter y notebooks
-jupyter
-notebook
-jupyterlab
+# --- Testing y calidad de código ---
+pytest==8.3.3
+pytest-cov==5.0.0
+coverage==7.6.1
+flake8==7.1.1
+black==24.10.0
+isort==5.13.2
 
-# Formateo y estilo de código
-black
-flake8
-isort
+# --- Documentación ---
+sphinx==8.0.2
+sphinx-rtd-theme==2.0.0
+myst-parser==3.0.1
+nbsphinx==0.9.3
 
-# Testing
-pytest
-pytest-cov
+# --- Visualización avanzada ---
+seaborn==0.13.2
+plotly==5.24.1
 
-# Documentación
-sphinx
-sphinx-rtd-theme
-myst-parser
-
-# Utilidades
-pre-commit
+# --- Utilidades extra ---
+tqdm==4.66.5
+rich==13.9.2
+pre-commit==3.8.0

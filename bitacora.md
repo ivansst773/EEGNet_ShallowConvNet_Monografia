@@ -248,6 +248,73 @@ Accuracy: 25.00 %
 - Segmentación activada generó más muestras, pero con pocas epochs aún no se observa mejora clara.  
 
 
+
+📒 Bitácora de Entrenamientos – BCI IV‑2a
+🧪 Smoke tests – BCI IV‑2a (sujeto A01)
+**Fecha:** 2025-11-14 
+**Dispositivo:** GPU (GTX 1050) 
+**Segmentación:** No 
+**Filtro:** Band-pass 4–40 Hz 
+**Epochs:** 2 — **Batch size:** 16 — **LR:** 0.001 — **Dropout:** EEGNet: 0.25 / ShallowConvNet: 0.50
+
+📊 Resultados iniciales
+Modelo	Train Loss	Val Loss	Accuracy
+EEGNet	1.1628	1.2149	50.00 %
+ShallowConvNet	0.8931	6.1624	25.00 %
+Observación: EEGNet más estable; ShallowConvNet sobreajustado.
+
+🧪 Smoke tests con segmentación (segment=True)
+Fecha: 2025-11-14 Segmentación: Activada Estratificación: Desactivada (clases <2 muestras)
+
+Modelo	Train Loss	Val Loss	Accuracy
+EEGNet	1.1655	1.3394	50.00 %
+ShallowConvNet	1.1225	6.8614	50.00 %
+Observación: Segmentación genera más muestras, pero aún no mejora rendimiento con pocas epochs.
+
+📊 Comparativa global – BCI IV‑2a (sujetos A01–A09)
+Configuración general:
+
+Epochs: 2
+
+Batch size: 16
+
+Learning rate: 0.001
+
+Filtro: Band-pass 4–40 Hz
+
+Optimizer: Adam
+
+📈 Promedio de rendimiento por modelo
+Modelo	Val Accuracy promedio (%)	Val Loss promedio
+EEGNet	52.78	1.32
+ShallowConvNet	41.11	4.85
+Observaciones globales:
+
+EEGNet mantiene mejor estabilidad y generalización.
+
+ShallowConvNet tiende al sobreajuste en validación.
+
+Segmentación aumenta muestras, pero requiere más epochs para mostrar beneficios claros.
+
+📈 Gráficas asociadas
+loss_comparison_2025-11-14.png
+
+accuracy_comparison_2025-11-14.png
+
+A01_loss.png, A01_accuracy.png
+
+global_accuracy.png, global_val_loss.png
+
+
+
+
+
+
+
+
+
+
+
 📝 Observaciones
 Estratificación: desactivada (clases con <2 muestras).
 
