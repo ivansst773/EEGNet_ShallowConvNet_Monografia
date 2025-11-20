@@ -307,15 +307,6 @@ A01_loss.png, A01_accuracy.png
 global_accuracy.png, global_val_loss.png
 
 
-
-
-
-
-
-
-
-
-
 📝 Observaciones
 Estratificación: desactivada (clases con <2 muestras).
 
@@ -334,3 +325,81 @@ Documentar métricas iniciales en results/.
 Ajustar hiperparámetros y preparar entrenamiento completo en todos los sujetos.
 
 Migrar pipeline al dataset clínico CN/MCI/AD + tau.
+
+
+## 📄 Bitácora de Proyecto – Actualización 19/11/2025
+🧩 Etapa 1 – Validación técnica inicial (BCI IV-2a)
+✅ Loader implementado (utils.py) con manejo de eventos repetidos y etiquetas fuera de rango.
+
+✅ Normalización trial-wise y filtro band-pass 4–40 Hz.
+
+✅ Modelos definidos (EEGNet y ShallowConvNet).
+
+✅ Smoke tests realizados en A01 (con y sin segmentación).
+
+✅ Documentación inicial en README.md y bitacora.md.
+
+✅ Segmentación opcional aplicada en todos los sujetos (A01–A09).
+
+Conclusión: Etapa 1 cerrada.
+
+🧩 Etapa 2 – Entrenamiento completo en dataset público (BCI IV-2a)
+✅ Entrenamiento en todos los sujetos A01–A09 con segmentación y ≥50 epochs.
+
+✅ Comparativa entre EEGNet y ShallowConvNet (accuracy y val_loss).
+
+✅ Scripts de análisis (analisis_metrics.py, gráficas globales y por sujeto).
+
+✅ Métricas registradas en results/tablas/metrics.csv.
+
+✅ Documentar hiperparámetros en configs/bci_iv2a.yaml (pendiente, ya tenemos plantilla).
+
+  📄 Configuración usada – 19/11/2025
+Archivo: configs/bci_iv2a.yaml
+- Epochs: 50
+- Batch size: 32
+- Learning rate: 0.001
+- Optimizer: Adam
+- EEGNet dropout: 0.25
+- ShallowConvNet dropout: 0.50
+- Segmentación: activada
+
+
+✅ Consolidar bitácora con resultados globales y observaciones finales.
+
+✅ Entrenamientos largos (≥50 epochs) ejecutados y documentados.
+
+Conclusión: Etapa 2 casi cerrada. Falta solo crear configs/bci_iv2a.yaml y añadir tabla global final en la bitácora.
+
+🧩 Etapa 3 – Migración al dataset clínico (CN/MCI/AD + tau)
+❌ Organización de carpeta data/raw/CLINICO/.
+
+❌ Loader para EEG + biomarcadores tau.
+
+❌ Definir preprocesamiento clínico (filtros, normalización, segmentación).
+
+⚠️ Configuración preliminar lista en configs/clinico.yaml (pendiente de uso).
+
+Conclusión: Etapa 3 aún no iniciada, pero infraestructura técnica lista para migrar.
+
+🧩 Etapa 4 – Integración multimodal y análisis final
+❌ No iniciada, depende de la etapa clínica.
+
+📌 Próximos pasos
+Cerrar Etapa 2
+
+Crear archivo configs/bci_iv2a.yaml con hiperparámetros.
+
+Actualizar bitacora.md con tabla global A01–A09 y observaciones comparativas.
+
+Preparar Etapa 3
+
+Organizar carpeta data/raw/CLINICO/.
+
+Implementar loader para EEG + tau.
+
+Definir preprocesamiento clínico.
+
+Etapa 4
+
+Iniciar integración multimodal una vez completada la etapa clínica.

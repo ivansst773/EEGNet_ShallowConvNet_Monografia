@@ -1,0 +1,22 @@
+# Hiperparámetros para entrenamiento en BCI IV-2a
+
+general:
+  dataset: BCI_IV_2a
+  segment: true
+  stratify: false
+  test_size: 0.2
+  window_size: 256
+  step: 128
+  apply_filter: true
+
+training:
+  epochs: 50
+  batch_size: 32
+  learning_rate: 0.001
+  optimizer: adam
+
+eegnet:
+  dropout: 0.25
+
+shallowconvnet:
+  dropout: 0.50

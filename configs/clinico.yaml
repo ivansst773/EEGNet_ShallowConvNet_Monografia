@@ -1,0 +1,23 @@
+# Hiperparámetros para entrenamiento en dataset clínico CN/MCI/AD + tau
+
+general:
+  dataset: CLINICO
+  segment: true
+  stratify: true
+  test_size: 0.2
+  window_size: 256
+  step: 128
+  apply_filter: true
+  biomarkers: ["tau", "amyloid", "cognitive_scores"]
+
+training:
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.0005
+  optimizer: adam
+
+eegnet:
+  dropout: 0.3
+
+shallowconvnet:
+  dropout: 0.5
