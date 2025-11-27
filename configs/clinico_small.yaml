@@ -1,0 +1,12 @@
+general:
+  test_size: 0.2        # 20% de los datos para validación
+  seed: 42              # reproducibilidad
+
+training:
+  epochs: 2             # pocas épocas para pruebas rápidas
+  batch_size: 64        # tamaño de batch moderado
+  learning_rate: 0.001  # tasa de aprendizaje estándar
+  save_model: true      # guardar modelo al final
+
+eegnet:
+  dropout: 0.5          # probabilidad de dropout

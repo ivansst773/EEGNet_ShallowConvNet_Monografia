@@ -1,23 +1,25 @@
-# Hiperparámetros para entrenamiento en dataset clínico CN/MCI/AD + tau
+# Configuración de entrenamiento en dataset clínico CN/MCI/AD + tau
 
 general:
   dataset: CLINICO
-  segment: true
-  stratify: true
-  test_size: 0.2
-  window_size: 256
-  step: 128
-  apply_filter: true
+  segment: true          # activar segmentación temporal
+  stratify: true         # mantener proporciones de clases en train/val
+  test_size: 0.2         # 80% train, 20% val
+  window_size: 256       # tamaño de ventana (ej. 1s si sfreq=256 Hz)
+  step: 128              # solapamiento (50%)
+  apply_filter: true     # activar filtro band-pass 1–40 Hz
   biomarkers: ["tau", "amyloid", "cognitive_scores"]
+  n_classes: 3           # número de clases (CN, AD, FTD) – ajusta si incluyes MCI
 
 training:
   epochs: 100
   batch_size: 32
   learning_rate: 0.0005
-  optimizer: adam
+  optimizer: adam        # opciones: adam, sgd, rmsprop
+  save_model: true       # guardar modelo entrenado (.pth)
 
 eegnet:
-  dropout: 0.3
+  dropout: 0.3           # regularización moderada
 
 shallowconvnet:
-  dropout: 0.5
+  dropout: 0.5           # regularización más fuerte
