@@ -12,8 +12,8 @@ general:
   n_classes: 3           # número de clases (CN, AD, FTD) – ajusta si incluyes MCI
 
 training:
-  epochs: 100
-  batch_size: 32
+  epochs: 10
+  batch_size: 512
   learning_rate: 0.0005
   optimizer: adam        # opciones: adam, sgd, rmsprop
   save_model: true       # guardar modelo entrenado (.pth)

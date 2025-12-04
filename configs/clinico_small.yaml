@@ -1,12 +1,25 @@
+# Configuración de entrenamiento en dataset clínico reducido (small)
+
 general:
-  test_size: 0.2        # 20% de los datos para validación
-  seed: 42              # reproducibilidad
+  dataset: CLINICO_SMALL
+  segment: true
+  stratify: true
+  test_size: 0.2
+  window_size: 256
+  step: 128
+  apply_filter: true
+  biomarkers: ["tau", "amyloid", "cognitive_scores"]
+  n_classes: 3
 
 training:
-  epochs: 2             # pocas épocas para pruebas rápidas
-  batch_size: 64        # tamaño de batch moderado
-  learning_rate: 0.001  # tasa de aprendizaje estándar
-  save_model: true      # guardar modelo al final
+  epochs: 2          # prueba corta
+  batch_size: 512    # aquí pruebas si tu GPU soporta batch grande
+  learning_rate: 0.0005
+  optimizer: adam
+  save_model: true
 
 eegnet:
-  dropout: 0.5          # probabilidad de dropout
+  dropout: 0.3
+
+shallowconvnet:
+  dropout: 0.5

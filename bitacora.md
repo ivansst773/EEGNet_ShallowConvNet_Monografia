@@ -403,3 +403,56 @@ Definir preprocesamiento clínico.
 Etapa 4
 
 Iniciar integración multimodal una vez completada la etapa clínica.
+
+
+## 📄 Bitácora de Proyecto – Actualización 28/11/2025
+🧩 Etapa 1 – Validación técnica inicial (BCI IV-2a)
+✅ Loader implementado (utils.py) con manejo de eventos repetidos y etiquetas fuera de rango. 
+✅ Normalización trial-wise y filtro band-pass 4–40 Hz. 
+✅ Modelos definidos (EEGNet y ShallowConvNet). 
+✅ Smoke tests realizados en A01 (con y sin segmentación). 
+✅ Documentación inicial en README.md y bitacora.md.. 
+✅ Segmentación opcional aplicada en todos los sujetos (A01–A09).
+
+Conclusión: Etapa 1 cerrada.
+
+🧩 Etapa 2 – Entrenamiento completo en dataset público (BCI IV-2a)
+✅ Entrenamiento en todos los sujetos A01–A09 con segmentación y ≥50 epochs. 
+✅ Comparativa entre EEGNet y ShallowConvNet (accuracy y val_loss). 
+✅ Scripts de análisis (analisis_metrics.py, gráficas globales y por sujeto). 
+✅ Métricas registradas en results/tablas/metrics.csv. 
+⚠️ Documentar hiperparámetros en configs/bci_iv2a.yaml (pendiente, plantilla ya creada). 
+✅ Entrenamientos largos (≥50 epochs) ejecutados y documentados. 
+✅ Consolidar bitácora con resultados globales y observaciones finales.
+
+Conclusión: Etapa 2 cerrada (solo falta formalizar configs/bci_iv2a.yaml y añadir tabla global final).
+
+🧩 Etapa 3 – Migración al dataset clínico (CN/MCI/AD + tau)
+✅ Carpeta data/raw/CLINICO/ organizada con index.csv completo (275k segmentos). 
+✅ Loader clínico (ClinicalEEGDataset) implementado y validado. 
+✅ Preprocesamiento definido: filtro band-pass 1–40 Hz, normalización trial-wise, segmentación activada. 
+✅ Configuración en configs/clinico.yaml lista y usada en corridas reales. 
+✅ Entrenamiento con EEGNet (10 épocas, batch_size=128, dropout=0.3, LR=0.0005) → Val Acc: 91.27%. 
+✅ Entrenamiento con ShallowConvNet en curso (épocas 1–6 ya muestran mejora progresiva, Val Acc ~89%). 
+✅ Métricas clínicas registradas en results/tablas/metrics.csv. 
+✅ Modelo EEGNet guardado en results/modelos/EEGNet_Clinico.pth.
+
+Conclusión: Etapa 3 en ejecución activa. Ya hay resultados clínicos iniciales con EEGNet y ShallowConvNet, falta completar corridas largas y documentar comparativa.
+
+🧩 Etapa 4 – Integración multimodal y análisis final
+❌ No iniciada, depende de la consolidación clínica. 
+⚠️ Pendiente: extender index.csv con biomarcadores (tau, amyloid, scores) e integrar en pipeline multimodal.
+
+
+📌 Próximos pasos inmediatos
+Formalizar configs/bci_iv2a.yaml y añadir tabla global A01–A09 en bitácora.
+
+Completar entrenamiento clínico con ShallowConvNet (≥10 épocas).
+
+Documentar comparativa EEGNet vs ShallowConvNet en dataset clínico.
+
+Generar gráficas de evolución (loss, accuracy) para ambos modelos.
+
+Extender index.csv con biomarcadores y adaptar loader para multimodalidad.
+
+✅ En resumen: Etapa 1 y 2 cerradas, Etapa 3 en ejecución activa con resultados clínicos iniciales, Etapa 4 aún no iniciada.

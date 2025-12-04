@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,15 +18,44 @@
 
 
 \refsection{0}
-  \datalist[entry]{apa/apasortcite//global/global}
-    \entry{Ajra2023}{article}{}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{ajra2023deep}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=55838a1ce5150181d3fe9139de7032e2}{%
+           family={Ajra},
+           familyi={A\bibinitperiod},
+           given={Hicham},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{fullhash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{fullhashraw}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{bibnamehash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{authorbibnamehash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{authornamehash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{authorfullhash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{authorfullhashraw}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Aging Neuroscience}
+      \field{title}{Deep learning-based EEG connectivity analysis for differential diagnosis of Alzheimer’s and frontotemporal dementia}
+      \field{year}{2023}
+    \endentry
+    \entry{Ajra2023}{article}{}{}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=f60feb3741d388c771819b34be9398d3}{%
+        {{un=1,uniquepart=given,hash=f60feb3741d388c771819b34be9398d3}{%
            family={Ajra},
            familyi={A\bibinitperiod},
            given={Zaineb},
            giveni={Z\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=39ce3c66fe9ccd543b0c766f6e8da081}{%
            family={Xu},
            familyi={X\bibinitperiod},
@@ -54,15 +83,16 @@
       }
       \strng{namehash}{bfe53097495c967303065b70984960c7}
       \strng{fullhash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \strng{fullhashraw}{422946ca166a7be2fcdc1e1a8c44b6d0}
       \strng{bibnamehash}{422946ca166a7be2fcdc1e1a8c44b6d0}
       \strng{authorbibnamehash}{422946ca166a7be2fcdc1e1a8c44b6d0}
       \strng{authornamehash}{bfe53097495c967303065b70984960c7}
       \strng{authorfullhash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \strng{authorfullhashraw}{422946ca166a7be2fcdc1e1a8c44b6d0}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Frontiers in Neurology}
@@ -79,14 +109,110 @@
       \verb https://doi.org/10.3389/fneur.2023.1270405
       \endverb
     \endentry
-    \entry{dePaula2009}{article}{}
+    \entry{blankertz2008bci}{misc}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b061ab38031e0396e2f0fc3308cccf7d}{%
+           family={Blankertz},
+           familyi={B\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{fullhash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{fullhashraw}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{bibnamehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{authorbibnamehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{authornamehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{authorfullhash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{authorfullhashraw}{8107d0f654cea4f31c6d857205d155b5}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.bbci.de/competition/iv}}
+      \field{title}{BCI Competition IV}
+      \field{year}{2008}
+    \endentry
+    \entry{Blankertz2008}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b061ab38031e0396e2f0fc3308cccf7d}{%
+           family={Blankertz},
+           familyi={B\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f1b6144a45b1967e989e74552e37ada}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Klaus-Robert},
+           giveni={K\bibinithyphendelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d99485528422420214c9378c4c1890c9}{%
+           family={Curio},
+           familyi={C\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29f42a1cdd1c8283fdbda1699a6f42eb}{%
+           family={Vidaurre},
+           familyi={V\bibinitperiod},
+           given={Carmen},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d88d64368d984d435404353a4140128}{%
+           family={Schlögl},
+           familyi={S\bibinitperiod},
+           given={Alois},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{fullhash}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \strng{fullhashraw}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \strng{bibnamehash}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \strng{authorbibnamehash}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \strng{authornamehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{authorfullhash}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \strng{authorfullhashraw}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the NIPS 2008 Workshop on BCI}
+      \field{title}{BCI Competition IV: Results and perspectives}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://www.bbci.de/competition/iv/
+      \endverb
+      \verb{url}
+      \verb https://www.bbci.de/competition/iv/
+      \endverb
+    \endentry
+    \entry{dePaula2009}{article}{}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=457dccd82a6c313426543b7c957eb628}{%
+        {{un=1,uniquepart=given,hash=457dccd82a6c313426543b7c957eb628}{%
            family={Paula},
            familyi={P\bibinitperiod},
            given={V.\bibnamedelimi J.\bibnamedelimi R.},
            giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0,
+           givenun=1,
            prefix={de},
            prefixi={d\bibinitperiod}}}%
         {{un=0,uniquepart=base,hash=592f9f52c5c655fe23af26fe75dabdb8}{%
@@ -110,15 +236,16 @@
       }
       \strng{namehash}{8e3d54d9cde8d059585bc210c22fb5e3}
       \strng{fullhash}{58c1942f66a34afe735d21fbac4c10e0}
+      \strng{fullhashraw}{58c1942f66a34afe735d21fbac4c10e0}
       \strng{bibnamehash}{58c1942f66a34afe735d21fbac4c10e0}
       \strng{authorbibnamehash}{58c1942f66a34afe735d21fbac4c10e0}
       \strng{authornamehash}{8e3d54d9cde8d059585bc210c22fb5e3}
       \strng{authorfullhash}{58c1942f66a34afe735d21fbac4c10e0}
+      \strng{authorfullhashraw}{58c1942f66a34afe735d21fbac4c10e0}
       \field{sortinit}{d}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Dementia \& Neuropsychologia}
@@ -138,7 +265,138 @@
       \verb https://doi.org/10.1590/S1980-57642009DN30300005
       \endverb
     \endentry
-    \entry{Kay1998}{book}{}
+    \entry{depaula2009tau}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=943228befeaa1e88aa8f50fe46a76291}{%
+           family={Paula},
+           familyi={P\bibinitperiod},
+           given={Vanessa},
+           giveni={V\bibinitperiod},
+           givenun=1,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{fullhash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{fullhashraw}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{bibnamehash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{authorbibnamehash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{authornamehash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{authorfullhash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{authorfullhashraw}{09f4a0fac91eb04d046d16c997f88acf}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Alzheimer’s Disease}
+      \field{title}{Tau pathology in Alzheimer's disease and other tauopathies}
+      \field{year}{2009}
+    \endentry
+    \entry{gil2023dataset}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0537207a7310f0dd81e0e9d6a6e3ba5}{%
+           family={Gil-González},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Ana},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{fullhash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{fullhashraw}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{bibnamehash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{authorbibnamehash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{authornamehash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{authorfullhash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{authorfullhashraw}{4c80ac5cced533e351b37c4b56662d0a}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data}
+      \field{number}{6}
+      \field{title}{A Dataset of Scalp EEG Recordings of Alzheimer’s Disease, Frontotemporal Dementia and Healthy Subjects from Routine EEG}
+      \field{volume}{8}
+      \field{year}{2023}
+      \field{pages}{95}
+      \range{pages}{1}
+    \endentry
+    \entry{MDPI2023}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6f9d14150a9c6238d5f566a786e1a1a5}{%
+           family={Gil-González},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Andrés},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce035c2bef60fda8c5b3132bdb6d8590}{%
+           family={Álvarez-Meza},
+           familyi={Á\bibinithyphendelim M\bibinitperiod},
+           given={Andrés},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8444289170cce6aa4dd9dc771bec352a}{%
+           family={Lotero},
+           familyi={L\bibinitperiod},
+           given={Brandon},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1c7f08d8a28f850415cff8fb4512ccc}{%
+           family={Triana-Martínez},
+           familyi={T\bibinithyphendelim M\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2a0dafc9f09549ce0272e674b9aad1f9}
+      \strng{fullhash}{2804469b7e7e108565ee5db719160edf}
+      \strng{fullhashraw}{2804469b7e7e108565ee5db719160edf}
+      \strng{bibnamehash}{2804469b7e7e108565ee5db719160edf}
+      \strng{authorbibnamehash}{2804469b7e7e108565ee5db719160edf}
+      \strng{authornamehash}{2a0dafc9f09549ce0272e674b9aad1f9}
+      \strng{authorfullhash}{2804469b7e7e108565ee5db719160edf}
+      \strng{authorfullhashraw}{2804469b7e7e108565ee5db719160edf}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data}
+      \field{number}{6}
+      \field{title}{A Dataset of Scalp EEG Recordings of Alzheimer’s Disease, Frontotemporal Dementia and Healthy Subjects from Routine EEG}
+      \field{volume}{8}
+      \field{year}{2023}
+      \field{pages}{95}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/data8060095
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3390/data8060095
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3390/data8060095
+      \endverb
+    \endentry
+    \entry{Kay1998}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=19c66c9bb8003666a723e9405355c007}{%
            family={Kay},
@@ -152,10 +410,12 @@
       }
       \strng{namehash}{19c66c9bb8003666a723e9405355c007}
       \strng{fullhash}{19c66c9bb8003666a723e9405355c007}
+      \strng{fullhashraw}{19c66c9bb8003666a723e9405355c007}
       \strng{bibnamehash}{19c66c9bb8003666a723e9405355c007}
       \strng{authorbibnamehash}{19c66c9bb8003666a723e9405355c007}
       \strng{authornamehash}{19c66c9bb8003666a723e9405355c007}
       \strng{authorfullhash}{19c66c9bb8003666a723e9405355c007}
+      \strng{authorfullhashraw}{19c66c9bb8003666a723e9405355c007}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -173,7 +433,7 @@
       \verb https://www.worldcat.org/title/39135645
       \endverb
     \endentry
-    \entry{Lawhern2018}{article}{}
+    \entry{Lawhern2018}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=e3b05d6d858046158dcce73e1d4bb4fc}{%
            family={Lawhern},
@@ -214,15 +474,18 @@
       }
       \strng{namehash}{0475f843d9ec06028a7e4789f71f6cd7}
       \strng{fullhash}{3152643a08eed2690636c28e99b9336c}
+      \strng{fullhashraw}{3152643a08eed2690636c28e99b9336c}
       \strng{bibnamehash}{3152643a08eed2690636c28e99b9336c}
       \strng{authorbibnamehash}{3152643a08eed2690636c28e99b9336c}
       \strng{authornamehash}{0475f843d9ec06028a7e4789f71f6cd7}
       \strng{authorfullhash}{3152643a08eed2690636c28e99b9336c}
+      \strng{authorfullhashraw}{3152643a08eed2690636c28e99b9336c}
+      \field{extraname}{1}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Neural Engineering}
@@ -242,7 +505,73 @@
       \verb https://doi.org/10.1088/1741-2552/aace8c
       \endverb
     \endentry
-    \entry{Schirrmeister2017}{article}{}
+    \entry{lawhern2018eegnet}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=e62c2c12eee53d85026da1c85319d92e}{%
+           family={Lawhern},
+           familyi={L\bibinitperiod},
+           given={Vernon\bibnamedelima J},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f65dc5231217537ca22071429744688}{%
+           family={Solon},
+           familyi={S\bibinitperiod},
+           given={Amelia\bibnamedelima J},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8bc20b2dcd8ed7fcd50af3400485afb}{%
+           family={Waytowich},
+           familyi={W\bibinitperiod},
+           given={Nicholas\bibnamedelima R},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d225ea79bb806d3ce1feae2cc08aa86a}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={Scott\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d6970b7e83517067ed732b2cb430528}{%
+           family={Hung},
+           familyi={H\bibinitperiod},
+           given={Catherine\bibnamedelima P},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=395a9b8504fbfecc2281938b2afb405d}{%
+           family={Lance},
+           familyi={L\bibinitperiod},
+           given={Brent\bibnamedelima J},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{1bb5eacbe5e270d7d92dbff7d24e12db}
+      \strng{fullhash}{a0c3c6178fecf641a55903f41eb7701f}
+      \strng{fullhashraw}{a0c3c6178fecf641a55903f41eb7701f}
+      \strng{bibnamehash}{a0c3c6178fecf641a55903f41eb7701f}
+      \strng{authorbibnamehash}{a0c3c6178fecf641a55903f41eb7701f}
+      \strng{authornamehash}{1bb5eacbe5e270d7d92dbff7d24e12db}
+      \strng{authorfullhash}{a0c3c6178fecf641a55903f41eb7701f}
+      \strng{authorfullhashraw}{a0c3c6178fecf641a55903f41eb7701f}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of neural engineering}
+      \field{number}{5}
+      \field{title}{EEGNet: A compact convolutional neural network for EEG-based brain–computer interfaces}
+      \field{volume}{15}
+      \field{year}{2018}
+      \field{pages}{056013}
+      \range{pages}{1}
+    \endentry
+    \entry{Schirrmeister2017}{article}{}{}
       \name{author}{9}{}{%
         {{un=0,uniquepart=base,hash=d2c2e216d96c2fe1c9a84e1965021b05}{%
            family={Schirrmeister},
@@ -301,15 +630,18 @@
       }
       \strng{namehash}{7f41bfd1bd9c1f1f6967d9a416493718}
       \strng{fullhash}{e28bde29da4461d92ff9deaf1314dde7}
+      \strng{fullhashraw}{e28bde29da4461d92ff9deaf1314dde7}
       \strng{bibnamehash}{e28bde29da4461d92ff9deaf1314dde7}
       \strng{authorbibnamehash}{e28bde29da4461d92ff9deaf1314dde7}
       \strng{authornamehash}{7f41bfd1bd9c1f1f6967d9a416493718}
       \strng{authorfullhash}{e28bde29da4461d92ff9deaf1314dde7}
+      \strng{authorfullhashraw}{e28bde29da4461d92ff9deaf1314dde7}
+      \field{extraname}{1}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Human Brain Mapping}
@@ -329,7 +661,91 @@
       \verb https://doi.org/10.1002/hbm.23730
       \endverb
     \endentry
-    \entry{Tolnay1999}{article}{}
+    \entry{schirrmeister2017deep}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=2126bad98b2b39d0fbac63849b6c897a}{%
+           family={Schirrmeister},
+           familyi={S\bibinitperiod},
+           given={Robin\bibnamedelima Tibor},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d52162d1c5497f647e12128f74d58da4}{%
+           family={Springenberg},
+           familyi={S\bibinitperiod},
+           given={Jost\bibnamedelima Tobias},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=519db839616801b3f4820bbc837e155c}{%
+           family={Fiederer},
+           familyi={F\bibinitperiod},
+           given={Lukas\bibnamedelimb Dominique\bibnamedelima Josef},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a100bddd4f75424824c0f39dc547f3aa}{%
+           family={Glasstetter},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=554f094deca53cbf5f3f77a28bbb493e}{%
+           family={Eggensperger},
+           familyi={E\bibinitperiod},
+           given={Katharina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5acab1965c7fcb93d7b2de124335fbc}{%
+           family={Tangermann},
+           familyi={T\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=528d4af87fd2ecf5fb8a22db913ce088}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98f4ab1bc2ac191d8f8a0651315ce9c0}{%
+           family={Burgard},
+           familyi={B\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a580dbb771a84aa7856d1d866afafbfb}{%
+           family={Ball},
+           familyi={B\bibinitperiod},
+           given={Tonio},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{d0f54494775c5d618b61612bdf512cf1}
+      \strng{fullhash}{28fc1ee9a819cd115266dff148926a60}
+      \strng{fullhashraw}{28fc1ee9a819cd115266dff148926a60}
+      \strng{bibnamehash}{28fc1ee9a819cd115266dff148926a60}
+      \strng{authorbibnamehash}{28fc1ee9a819cd115266dff148926a60}
+      \strng{authornamehash}{d0f54494775c5d618b61612bdf512cf1}
+      \strng{authorfullhash}{28fc1ee9a819cd115266dff148926a60}
+      \strng{authorfullhashraw}{28fc1ee9a819cd115266dff148926a60}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human brain mapping}
+      \field{number}{11}
+      \field{title}{Deep learning with convolutional neural networks for EEG decoding and visualization}
+      \field{volume}{38}
+      \field{year}{2017}
+      \field{pages}{5391\bibrangedash 5420}
+      \range{pages}{30}
+    \endentry
+    \entry{Tolnay1999}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=594c5c008ab90ee66e7539197a95f2ce}{%
            family={Tolnay},
@@ -346,10 +762,12 @@
       }
       \strng{namehash}{0f7c094fff02d427117f958f564ab34b}
       \strng{fullhash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{fullhashraw}{0f7c094fff02d427117f958f564ab34b}
       \strng{bibnamehash}{0f7c094fff02d427117f958f564ab34b}
       \strng{authorbibnamehash}{0f7c094fff02d427117f958f564ab34b}
       \strng{authornamehash}{0f7c094fff02d427117f958f564ab34b}
       \strng{authorfullhash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{authorfullhashraw}{0f7c094fff02d427117f958f564ab34b}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{extradatescope}{labelyear}
@@ -375,15 +793,44 @@
       \endverb
     \endentry
   \enddatalist
-  \datalist[entry]{apa/global//global/global}
-    \entry{Ajra2023}{article}{}
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{ajra2023deep}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=55838a1ce5150181d3fe9139de7032e2}{%
+           family={Ajra},
+           familyi={A\bibinitperiod},
+           given={Hicham},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{fullhash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{fullhashraw}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{bibnamehash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{authorbibnamehash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{authornamehash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{authorfullhash}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \strng{authorfullhashraw}{6be651e88d7505d56f2ec5eeb9b4bee4}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Aging Neuroscience}
+      \field{title}{Deep learning-based EEG connectivity analysis for differential diagnosis of Alzheimer’s and frontotemporal dementia}
+      \field{year}{2023}
+    \endentry
+    \entry{Ajra2023}{article}{}{}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=f60feb3741d388c771819b34be9398d3}{%
+        {{un=1,uniquepart=given,hash=f60feb3741d388c771819b34be9398d3}{%
            family={Ajra},
            familyi={A\bibinitperiod},
            given={Zaineb},
            giveni={Z\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=39ce3c66fe9ccd543b0c766f6e8da081}{%
            family={Xu},
            familyi={X\bibinitperiod},
@@ -411,15 +858,16 @@
       }
       \strng{namehash}{bfe53097495c967303065b70984960c7}
       \strng{fullhash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \strng{fullhashraw}{422946ca166a7be2fcdc1e1a8c44b6d0}
       \strng{bibnamehash}{422946ca166a7be2fcdc1e1a8c44b6d0}
       \strng{authorbibnamehash}{422946ca166a7be2fcdc1e1a8c44b6d0}
       \strng{authornamehash}{bfe53097495c967303065b70984960c7}
       \strng{authorfullhash}{422946ca166a7be2fcdc1e1a8c44b6d0}
+      \strng{authorfullhashraw}{422946ca166a7be2fcdc1e1a8c44b6d0}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Frontiers in Neurology}
@@ -436,14 +884,110 @@
       \verb https://doi.org/10.3389/fneur.2023.1270405
       \endverb
     \endentry
-    \entry{dePaula2009}{article}{}
+    \entry{blankertz2008bci}{misc}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b061ab38031e0396e2f0fc3308cccf7d}{%
+           family={Blankertz},
+           familyi={B\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{fullhash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{fullhashraw}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{bibnamehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{authorbibnamehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{authornamehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{authorfullhash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{authorfullhashraw}{8107d0f654cea4f31c6d857205d155b5}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.bbci.de/competition/iv}}
+      \field{title}{BCI Competition IV}
+      \field{year}{2008}
+    \endentry
+    \entry{Blankertz2008}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b061ab38031e0396e2f0fc3308cccf7d}{%
+           family={Blankertz},
+           familyi={B\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f1b6144a45b1967e989e74552e37ada}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Klaus-Robert},
+           giveni={K\bibinithyphendelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d99485528422420214c9378c4c1890c9}{%
+           family={Curio},
+           familyi={C\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29f42a1cdd1c8283fdbda1699a6f42eb}{%
+           family={Vidaurre},
+           familyi={V\bibinitperiod},
+           given={Carmen},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d88d64368d984d435404353a4140128}{%
+           family={Schlögl},
+           familyi={S\bibinitperiod},
+           given={Alois},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{fullhash}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \strng{fullhashraw}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \strng{bibnamehash}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \strng{authorbibnamehash}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \strng{authornamehash}{8107d0f654cea4f31c6d857205d155b5}
+      \strng{authorfullhash}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \strng{authorfullhashraw}{3d86cb773c0a4ba30e8a091b58c9056b}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the NIPS 2008 Workshop on BCI}
+      \field{title}{BCI Competition IV: Results and perspectives}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://www.bbci.de/competition/iv/
+      \endverb
+      \verb{url}
+      \verb https://www.bbci.de/competition/iv/
+      \endverb
+    \endentry
+    \entry{dePaula2009}{article}{}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=457dccd82a6c313426543b7c957eb628}{%
+        {{un=1,uniquepart=given,hash=457dccd82a6c313426543b7c957eb628}{%
            family={Paula},
            familyi={P\bibinitperiod},
            given={V.\bibnamedelimi J.\bibnamedelimi R.},
            giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0,
+           givenun=1,
            prefix={de},
            prefixi={d\bibinitperiod}}}%
         {{un=0,uniquepart=base,hash=592f9f52c5c655fe23af26fe75dabdb8}{%
@@ -467,15 +1011,16 @@
       }
       \strng{namehash}{8e3d54d9cde8d059585bc210c22fb5e3}
       \strng{fullhash}{58c1942f66a34afe735d21fbac4c10e0}
+      \strng{fullhashraw}{58c1942f66a34afe735d21fbac4c10e0}
       \strng{bibnamehash}{58c1942f66a34afe735d21fbac4c10e0}
       \strng{authorbibnamehash}{58c1942f66a34afe735d21fbac4c10e0}
       \strng{authornamehash}{8e3d54d9cde8d059585bc210c22fb5e3}
       \strng{authorfullhash}{58c1942f66a34afe735d21fbac4c10e0}
+      \strng{authorfullhashraw}{58c1942f66a34afe735d21fbac4c10e0}
       \field{sortinit}{d}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Dementia \& Neuropsychologia}
@@ -495,7 +1040,138 @@
       \verb https://doi.org/10.1590/S1980-57642009DN30300005
       \endverb
     \endentry
-    \entry{Kay1998}{book}{}
+    \entry{depaula2009tau}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=943228befeaa1e88aa8f50fe46a76291}{%
+           family={Paula},
+           familyi={P\bibinitperiod},
+           given={Vanessa},
+           giveni={V\bibinitperiod},
+           givenun=1,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{fullhash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{fullhashraw}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{bibnamehash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{authorbibnamehash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{authornamehash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{authorfullhash}{09f4a0fac91eb04d046d16c997f88acf}
+      \strng{authorfullhashraw}{09f4a0fac91eb04d046d16c997f88acf}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Alzheimer’s Disease}
+      \field{title}{Tau pathology in Alzheimer's disease and other tauopathies}
+      \field{year}{2009}
+    \endentry
+    \entry{gil2023dataset}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0537207a7310f0dd81e0e9d6a6e3ba5}{%
+           family={Gil-González},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Ana},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{fullhash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{fullhashraw}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{bibnamehash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{authorbibnamehash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{authornamehash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{authorfullhash}{4c80ac5cced533e351b37c4b56662d0a}
+      \strng{authorfullhashraw}{4c80ac5cced533e351b37c4b56662d0a}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data}
+      \field{number}{6}
+      \field{title}{A Dataset of Scalp EEG Recordings of Alzheimer’s Disease, Frontotemporal Dementia and Healthy Subjects from Routine EEG}
+      \field{volume}{8}
+      \field{year}{2023}
+      \field{pages}{95}
+      \range{pages}{1}
+    \endentry
+    \entry{MDPI2023}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6f9d14150a9c6238d5f566a786e1a1a5}{%
+           family={Gil-González},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Andrés},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce035c2bef60fda8c5b3132bdb6d8590}{%
+           family={Álvarez-Meza},
+           familyi={Á\bibinithyphendelim M\bibinitperiod},
+           given={Andrés},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8444289170cce6aa4dd9dc771bec352a}{%
+           family={Lotero},
+           familyi={L\bibinitperiod},
+           given={Brandon},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1c7f08d8a28f850415cff8fb4512ccc}{%
+           family={Triana-Martínez},
+           familyi={T\bibinithyphendelim M\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2a0dafc9f09549ce0272e674b9aad1f9}
+      \strng{fullhash}{2804469b7e7e108565ee5db719160edf}
+      \strng{fullhashraw}{2804469b7e7e108565ee5db719160edf}
+      \strng{bibnamehash}{2804469b7e7e108565ee5db719160edf}
+      \strng{authorbibnamehash}{2804469b7e7e108565ee5db719160edf}
+      \strng{authornamehash}{2a0dafc9f09549ce0272e674b9aad1f9}
+      \strng{authorfullhash}{2804469b7e7e108565ee5db719160edf}
+      \strng{authorfullhashraw}{2804469b7e7e108565ee5db719160edf}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data}
+      \field{number}{6}
+      \field{title}{A Dataset of Scalp EEG Recordings of Alzheimer’s Disease, Frontotemporal Dementia and Healthy Subjects from Routine EEG}
+      \field{volume}{8}
+      \field{year}{2023}
+      \field{pages}{95}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/data8060095
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3390/data8060095
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3390/data8060095
+      \endverb
+    \endentry
+    \entry{Kay1998}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=19c66c9bb8003666a723e9405355c007}{%
            family={Kay},
@@ -509,10 +1185,12 @@
       }
       \strng{namehash}{19c66c9bb8003666a723e9405355c007}
       \strng{fullhash}{19c66c9bb8003666a723e9405355c007}
+      \strng{fullhashraw}{19c66c9bb8003666a723e9405355c007}
       \strng{bibnamehash}{19c66c9bb8003666a723e9405355c007}
       \strng{authorbibnamehash}{19c66c9bb8003666a723e9405355c007}
       \strng{authornamehash}{19c66c9bb8003666a723e9405355c007}
       \strng{authorfullhash}{19c66c9bb8003666a723e9405355c007}
+      \strng{authorfullhashraw}{19c66c9bb8003666a723e9405355c007}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -530,7 +1208,7 @@
       \verb https://www.worldcat.org/title/39135645
       \endverb
     \endentry
-    \entry{Lawhern2018}{article}{}
+    \entry{Lawhern2018}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=e3b05d6d858046158dcce73e1d4bb4fc}{%
            family={Lawhern},
@@ -571,15 +1249,18 @@
       }
       \strng{namehash}{0475f843d9ec06028a7e4789f71f6cd7}
       \strng{fullhash}{3152643a08eed2690636c28e99b9336c}
+      \strng{fullhashraw}{3152643a08eed2690636c28e99b9336c}
       \strng{bibnamehash}{3152643a08eed2690636c28e99b9336c}
       \strng{authorbibnamehash}{3152643a08eed2690636c28e99b9336c}
       \strng{authornamehash}{0475f843d9ec06028a7e4789f71f6cd7}
       \strng{authorfullhash}{3152643a08eed2690636c28e99b9336c}
+      \strng{authorfullhashraw}{3152643a08eed2690636c28e99b9336c}
+      \field{extraname}{1}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Neural Engineering}
@@ -599,7 +1280,73 @@
       \verb https://doi.org/10.1088/1741-2552/aace8c
       \endverb
     \endentry
-    \entry{Schirrmeister2017}{article}{}
+    \entry{lawhern2018eegnet}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=e62c2c12eee53d85026da1c85319d92e}{%
+           family={Lawhern},
+           familyi={L\bibinitperiod},
+           given={Vernon\bibnamedelima J},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f65dc5231217537ca22071429744688}{%
+           family={Solon},
+           familyi={S\bibinitperiod},
+           given={Amelia\bibnamedelima J},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8bc20b2dcd8ed7fcd50af3400485afb}{%
+           family={Waytowich},
+           familyi={W\bibinitperiod},
+           given={Nicholas\bibnamedelima R},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d225ea79bb806d3ce1feae2cc08aa86a}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={Scott\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d6970b7e83517067ed732b2cb430528}{%
+           family={Hung},
+           familyi={H\bibinitperiod},
+           given={Catherine\bibnamedelima P},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=395a9b8504fbfecc2281938b2afb405d}{%
+           family={Lance},
+           familyi={L\bibinitperiod},
+           given={Brent\bibnamedelima J},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{1bb5eacbe5e270d7d92dbff7d24e12db}
+      \strng{fullhash}{a0c3c6178fecf641a55903f41eb7701f}
+      \strng{fullhashraw}{a0c3c6178fecf641a55903f41eb7701f}
+      \strng{bibnamehash}{a0c3c6178fecf641a55903f41eb7701f}
+      \strng{authorbibnamehash}{a0c3c6178fecf641a55903f41eb7701f}
+      \strng{authornamehash}{1bb5eacbe5e270d7d92dbff7d24e12db}
+      \strng{authorfullhash}{a0c3c6178fecf641a55903f41eb7701f}
+      \strng{authorfullhashraw}{a0c3c6178fecf641a55903f41eb7701f}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of neural engineering}
+      \field{number}{5}
+      \field{title}{EEGNet: A compact convolutional neural network for EEG-based brain–computer interfaces}
+      \field{volume}{15}
+      \field{year}{2018}
+      \field{pages}{056013}
+      \range{pages}{1}
+    \endentry
+    \entry{Schirrmeister2017}{article}{}{}
       \name{author}{9}{}{%
         {{un=0,uniquepart=base,hash=d2c2e216d96c2fe1c9a84e1965021b05}{%
            family={Schirrmeister},
@@ -658,15 +1405,18 @@
       }
       \strng{namehash}{7f41bfd1bd9c1f1f6967d9a416493718}
       \strng{fullhash}{e28bde29da4461d92ff9deaf1314dde7}
+      \strng{fullhashraw}{e28bde29da4461d92ff9deaf1314dde7}
       \strng{bibnamehash}{e28bde29da4461d92ff9deaf1314dde7}
       \strng{authorbibnamehash}{e28bde29da4461d92ff9deaf1314dde7}
       \strng{authornamehash}{7f41bfd1bd9c1f1f6967d9a416493718}
       \strng{authorfullhash}{e28bde29da4461d92ff9deaf1314dde7}
+      \strng{authorfullhashraw}{e28bde29da4461d92ff9deaf1314dde7}
+      \field{extraname}{1}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Human Brain Mapping}
@@ -686,7 +1436,91 @@
       \verb https://doi.org/10.1002/hbm.23730
       \endverb
     \endentry
-    \entry{Tolnay1999}{article}{}
+    \entry{schirrmeister2017deep}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=2126bad98b2b39d0fbac63849b6c897a}{%
+           family={Schirrmeister},
+           familyi={S\bibinitperiod},
+           given={Robin\bibnamedelima Tibor},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d52162d1c5497f647e12128f74d58da4}{%
+           family={Springenberg},
+           familyi={S\bibinitperiod},
+           given={Jost\bibnamedelima Tobias},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=519db839616801b3f4820bbc837e155c}{%
+           family={Fiederer},
+           familyi={F\bibinitperiod},
+           given={Lukas\bibnamedelimb Dominique\bibnamedelima Josef},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a100bddd4f75424824c0f39dc547f3aa}{%
+           family={Glasstetter},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=554f094deca53cbf5f3f77a28bbb493e}{%
+           family={Eggensperger},
+           familyi={E\bibinitperiod},
+           given={Katharina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5acab1965c7fcb93d7b2de124335fbc}{%
+           family={Tangermann},
+           familyi={T\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=528d4af87fd2ecf5fb8a22db913ce088}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98f4ab1bc2ac191d8f8a0651315ce9c0}{%
+           family={Burgard},
+           familyi={B\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a580dbb771a84aa7856d1d866afafbfb}{%
+           family={Ball},
+           familyi={B\bibinitperiod},
+           given={Tonio},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{d0f54494775c5d618b61612bdf512cf1}
+      \strng{fullhash}{28fc1ee9a819cd115266dff148926a60}
+      \strng{fullhashraw}{28fc1ee9a819cd115266dff148926a60}
+      \strng{bibnamehash}{28fc1ee9a819cd115266dff148926a60}
+      \strng{authorbibnamehash}{28fc1ee9a819cd115266dff148926a60}
+      \strng{authornamehash}{d0f54494775c5d618b61612bdf512cf1}
+      \strng{authorfullhash}{28fc1ee9a819cd115266dff148926a60}
+      \strng{authorfullhashraw}{28fc1ee9a819cd115266dff148926a60}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human brain mapping}
+      \field{number}{11}
+      \field{title}{Deep learning with convolutional neural networks for EEG decoding and visualization}
+      \field{volume}{38}
+      \field{year}{2017}
+      \field{pages}{5391\bibrangedash 5420}
+      \range{pages}{30}
+    \endentry
+    \entry{Tolnay1999}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=594c5c008ab90ee66e7539197a95f2ce}{%
            family={Tolnay},
@@ -703,10 +1537,12 @@
       }
       \strng{namehash}{0f7c094fff02d427117f958f564ab34b}
       \strng{fullhash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{fullhashraw}{0f7c094fff02d427117f958f564ab34b}
       \strng{bibnamehash}{0f7c094fff02d427117f958f564ab34b}
       \strng{authorbibnamehash}{0f7c094fff02d427117f958f564ab34b}
       \strng{authornamehash}{0f7c094fff02d427117f958f564ab34b}
       \strng{authorfullhash}{0f7c094fff02d427117f958f564ab34b}
+      \strng{authorfullhashraw}{0f7c094fff02d427117f958f564ab34b}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{extradatescope}{labelyear}
