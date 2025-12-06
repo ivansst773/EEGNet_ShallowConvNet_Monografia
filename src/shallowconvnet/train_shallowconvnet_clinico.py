@@ -8,7 +8,8 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, random_split
 import numpy as np
 import os
-import time   # ⏱️ para medir tiempos
+import time
+import csv   # 📊 para guardar historial
 
 from src.clinical_loader import ClinicalEEGDataset
 from src.models import ShallowConvNet
@@ -54,7 +55,7 @@ sample_data, _ = dataset[0]
 chans, samples = sample_data.shape
 
 # -----------------------------
-# Definir modelo
+# Definir modelo ShallowConvNet
 # -----------------------------
 model = ShallowConvNet(
     n_channels=chans,
@@ -75,6 +76,7 @@ scaler = torch.amp.GradScaler(device="cuda")
 # Entrenamiento + Validación por época
 # -----------------------------
 epoch_times = []
+history = []  # 📊 historial por epoch
 
 for epoch in range(epochs):
     start_time = time.time()
@@ -84,11 +86,7 @@ for epoch in range(epochs):
     for batch_idx, (xb, yb) in enumerate(train_loader):
         xb, yb = xb.to(device, non_blocking=True), yb.to(device, non_blocking=True)
 
-        if batch_idx == 0 and epoch == 0:
-            print(f"[DEBUG] xb: {xb.device}, yb: {yb.device}, modelo: {next(model.parameters()).device}")
-
         optimizer.zero_grad()
-
         with torch.amp.autocast("cuda"):
             outputs = model(xb.unsqueeze(1))
             loss = criterion(outputs, yb)
@@ -98,9 +96,6 @@ for epoch in range(epochs):
         scaler.update()
 
         train_losses.append(loss.item())
-
-        if batch_idx % 50 == 0:
-            print(f"[Epoch {epoch+1}] Batch {batch_idx}/{len(train_loader)} | Loss: {loss.item():.4f}")
 
     # ---- Validación ----
     model.eval()
@@ -128,8 +123,22 @@ for epoch in range(epochs):
         f"Train Loss: {np.mean(train_losses):.4f} | "
         f"Val Loss: {val_loss_mean:.4f} | "
         f"Val Acc: {val_acc*100:.2f}% | "
-        f"Tiempo: {epoch_duration:.2f} segundos"
+        f"Tiempo: {epoch_duration:.2f} s"
     )
+
+    # Guardar historial
+    history.append([epoch+1, np.mean(train_losses), val_loss_mean, val_acc*100, epoch_duration])
+
+# -----------------------------
+# Guardar historial en CSV
+# -----------------------------
+os.makedirs("results/tablas", exist_ok=True)
+history_path = "results/tablas/history_shallowconvnet.csv"
+with open(history_path, "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow(["epoch", "train_loss", "val_loss", "val_acc", "time"])
+    writer.writerows(history)
+print(f"[INFO] Historial guardado en {history_path}")
 
 # -----------------------------
 # Log de métricas finales

@@ -9,7 +9,7 @@ def log_metrics(
     batch_size: int,
     learning_rate: float,
     dropout: float,
-    train_loss: float,
+    train_loss: float,  
     val_loss: float,
     val_accuracy: float,
     dispositivo: str,

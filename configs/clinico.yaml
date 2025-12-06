@@ -5,21 +5,23 @@ general:
   segment: true          # activar segmentación temporal
   stratify: true         # mantener proporciones de clases en train/val
   test_size: 0.2         # 80% train, 20% val
-  window_size: 256       # tamaño de ventana (ej. 1s si sfreq=256 Hz)
-  step: 128              # solapamiento (50%)
+  window_size: 2048       # tamaño de ventana (ej. 1s si sfreq=256 Hz)
+  step: 512              # solapamiento (50%)
   apply_filter: true     # activar filtro band-pass 1–40 Hz
   biomarkers: ["tau", "amyloid", "cognitive_scores"]
   n_classes: 3           # número de clases (CN, AD, FTD) – ajusta si incluyes MCI
 
 training:
-  epochs: 10
-  batch_size: 512
-  learning_rate: 0.0005
+  epochs: 300          # número de épocas
+  batch_size: 128      # tamaño de batch
+  learning_rate: 0.0003 # tasa de aprendizaje
   optimizer: adam        # opciones: adam, sgd, rmsprop
   save_model: true       # guardar modelo entrenado (.pth)
+  save_history: true     # guardar historial de entrenamiento (.pth)
+  log_interval: 1       # intervalo de logs por época
 
 eegnet:
-  dropout: 0.3           # regularización moderada
+  dropout: 0.4           # más fuerte para evitar overfitting
 
 shallowconvnet:
-  dropout: 0.5           # regularización más fuerte
+  dropout: 0.5           # ya está bien, puedes mantenerlo
