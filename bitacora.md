@@ -456,3 +456,36 @@ Generar gráficas de evolución (loss, accuracy) para ambos modelos.
 Extender index.csv con biomarcadores y adaptar loader para multimodalidad.
 
 ✅ En resumen: Etapa 1 y 2 cerradas, Etapa 3 en ejecución activa con resultados clínicos iniciales, Etapa 4 aún no iniciada.
+
+## 📄 Bitácora de Proyecto – Actualización 10/12/2025
+🧩 Etapa 1 – Validación técnica inicial (BCI IV-2a) ✅ Cerrada y documentada. Sin cambios.
+
+🧩 Etapa 2 – Entrenamiento completo en dataset público (BCI IV-2a) ✅ Entrenamientos largos (≥50 epochs) completados en todos los sujetos A01–A09. ✅ Tabla global consolidada en results/tablas/metrics.csv. ✅ Configuración formalizada en configs/bci_iv2a.yaml. ✅ Gráficas comparativas de accuracy y loss por sujeto añadidas a la bitácora.
+
+Conclusión: Etapa 2 cerrada y completamente documentada.
+
+🧩 Etapa 3 – Migración al dataset clínico (CN/MCI/AD + tau) ✅ Entrenamiento completo con EEGNet (≥10 épocas, batch_size=128, dropout=0.3, LR=0.0005) → Val Acc: ~97%. ✅ Entrenamiento con ShallowConvNet completado (≥10 épocas, batch_size=512, dropout=0.5) → Val Acc: ~91%. ✅ Comparativa EEGNet vs ShallowConvNet documentada en results/tablas/metrics.csv. ✅ Modelos guardados en results/modelos/EEGNet_Clinico.pth y ShallowConvNet_Clinico.pth. ✅ Gráficas de evolución (loss, accuracy) generadas para ambos modelos. ✅ Gráficas de interpretabilidad por canal y banda añadidas (saliency maps).
+
+Conclusión: Etapa 3 cerrada en su fase de entrenamiento y análisis inicial. Documentación consolidada en bitácora y README.
+
+🧩 Etapa 4 – Integración multimodal y análisis final ⚠️ En preparación:
+
+Extensión de index.csv con biomarcadores (tau, amyloid, scores).
+
+Adaptación del loader para multimodalidad.
+
+Planificación de corridas con integración de variables clínicas adicionales.
+
+Conclusión: Etapa 4 aún no iniciada, pero con tareas preparatorias definidas.
+
+📌 Próximos pasos inmediatos
+
+Incorporar biomarcadores en index.csv y validar loader multimodal.
+
+Ejecutar corridas exploratorias con integración de tau/amyloid/scores.
+
+Documentar resultados multimodales en bitácora y repositorio.
+
+Preparar sección de Academic Products y Acknowledgments en la monografía.
+
+✅ En resumen: Etapas 1 y 2 cerradas y documentadas; Etapa 3 cerrada con resultados clínicos completos y gráficas de interpretabilidad; Etapa 4 en fase de preparación para multimodalidad.
