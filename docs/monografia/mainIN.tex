@@ -48,7 +48,7 @@
       \color{white}\scriptsize Edgar Iván Calpa (UNAL Manizales)
     \end{beamercolorbox}%
     \begin{beamercolorbox}[wd=.30\paperwidth,ht=2.5ex,dp=1.5ex,center]{footline center}
-      \color{white}\scriptsize EEGNet y Shallow ConvNet
+      \color{white}\scriptsize EEGNet and Shallow ConvNet
     \end{beamercolorbox}%
     \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.5ex,dp=1.5ex,center]{footline right}
       \color{white}\scriptsize \insertframenumber/\inserttotalframenumber
@@ -95,12 +95,12 @@
   \end{tikzpicture}%
 }
 
-% -------- METADATOS --------
-\title{EEGNet y Shallow ConvNet}
-\author{Universidad Nacional de Colombia - Sede Manizales \\ Edgar Iván Calpa Cuacialpud}
-\date{Modelos de aprendizaje profundo aplicados a señales EEG\\% 
-Profesor: Andrés Marino Álvarez Meza, PhD\\%
-Departamento de Ingeniería Eléctrica, Electrónica y Computación}
+% -------- METADATA --------
+\title{EEGNet and Shallow ConvNet}
+\author{National University of Colombia – Manizales Campus \\ Edgar Iván Calpa Cuacialpud}
+\date{Deep learning models applied to EEG signals\\%
+Advisor: Andrés Marino Álvarez Meza, PhD\\%
+Department of Electrical, Electronic and Computer Engineering}
 
 \begin{document}
 
@@ -129,58 +129,59 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 \begin{frame}{Motivation}
 \begin{columns}[T]
 
-  % Columna izquierda: lista de motivaciones
+  % Left column: list of motivations
   \begin{column}{0.6\textwidth}
     \begin{itemize}
-      \item \textbf{Accesibilidad clínica}: PET tau y LCR son costosos e invasivos, se requiere biomarcador no invasivo y repetible {\tiny\cite{dePaula2009}}
+      \item \textbf{Clinical accessibility}: PET tau and CSF are costly and invasive; a non-invasive, repeatable biomarker is required {\tiny\cite{dePaula2009}}
       \begin{figure}
       \centering
       \href{https://www.savalnet.cl/medios/cyc/articulos/2024/728546cg01}{%
         \includegraphics[width=0.3\linewidth]{figuras/tau.png}%
       }
-      \caption{\tiny Prueba sanguínea de tau.}
+      \caption{\tiny Tau blood test.}
     \end{figure}
-      \item \textbf{Huella funcional}: La propagación de tau altera ritmos y conectividad neuronal, el EEG puede capturar esos cambios {\tiny\cite{Tolnay1999}}
+      \item \textbf{Functional footprint}: Tau propagation alters rhythms and neural connectivity; EEG can capture these changes {\tiny\cite{Tolnay1999}}
     \end{itemize}
   \end{column}
 
-  % Columna derecha: imágenes con enlaces
+  % Right column: images with links
   \begin{column}{0.38\textwidth}
 
-    % Imagen 2: Huella funcional
+    % Image 2: Functional footprint
     \begin{figure}
       \centering
       \href{https://www.nature.com/articles/nn.4328}{%
         \includegraphics[width=\linewidth]{figuras/Performance_of_ESM_in_predicting_spatial_progression_of_tau.png}%
       }
-      \caption{\tiny Propagación de tau y conectividad neuronal.}
+      \caption{\tiny Tau propagation and neural connectivity.}
     \end{figure}
   \end{column}
 
 \end{columns}
 \end{frame}
 
+
 % ---- Motivation ----
 %\section{Motivation}
 \begin{frame}{Motivation}
 \begin{columns}[T]
 
-  % Columna izquierda: lista de motivaciones
+  % Left column: list of motivations
   \begin{column}{0.6\textwidth}
     \begin{itemize}
-      \item \textbf{Deep learning en EEG}: Modelos compactos como EEGNet y Shallow ConvNet detectan patrones espacio–temporales en EEG con datos limitados {\tiny\cite{Lawhern2018,Schirrmeister2017}}
+      \item \textbf{Deep learning in EEG}: Compact models such as EEGNet and Shallow ConvNet detect spatio–temporal EEG patterns with limited data {\tiny\cite{Lawhern2018,Schirrmeister2017}}
     \end{itemize}
   \end{column}
 
-  % Columna derecha: imágenes con enlaces
+  % Right column: images with links
   \begin{column}{0.4\textwidth}
-    % Imagen 3: Deep learning en EEG
+    % Image 3: Deep learning in EEG
     \begin{figure}
       \centering
       \href{https://www.mdpi.com/2079-9292/12/12/2743}{%
         \includegraphics[width=\linewidth]{figuras/EEGNet.png}%
       }
-      \caption{\tiny Arquitectura EEGNet.}
+      \caption{\tiny EEGNet architecture.}
     \end{figure}
   \end{column}
 
@@ -192,9 +193,9 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 \section{Problem Statement}
 \begin{frame}{Problem Statement}
 \begin{itemize}
-  \item \textbf{General}: No existe un biomarcador funcional, no invasivo y accesible para detectar progresión de Alzheimer vinculada a tau {\tiny\cite{dePaula2009}}
-  \item \textbf{Específico}: Validar si EEGNet y Shallow ConvNet identifican patrones EEG asociados a propagación de tau y progresión clínica {\tiny\cite{Lawhern2018,Schirrmeister2017}}
-  \item \textbf{Qué hacemos}: Entrenar y comparar ambos modelos sobre EEG CN/MCI/AD, analizar interpretabilidad por canal/banda y vincular hallazgos con trayectorias tau {\tiny\cite{Ajra2023}}
+  \item \textbf{General}: No functional, non-invasive, accessible biomarker exists to detect Alzheimer’s progression linked to tau {\tiny\cite{dePaula2009}}
+  \item \textbf{Specific}: Validate whether EEGNet and Shallow ConvNet identify EEG patterns associated with tau propagation and clinical progression {\tiny\cite{Lawhern2018,Schirrmeister2017}}
+  \item \textbf{Our approach}: Train and compare both models on CN/MCI/AD EEG, analyze interpretability by channel/band, and link findings to tau trajectories {\tiny\cite{Ajra2023}}
 \end{itemize}
 \end{frame}
 
@@ -202,52 +203,51 @@ Departamento de Ingeniería Eléctrica, Electrónica y Computación}
 % \section{Problem Statement}
 \begin{frame}{Problem Statement}
 \begin{itemize}
-  \item \textbf{Teoría de detección}: Maximizar \(P_{D}\) para un \(P_{FA}\) dado, evaluar curvas ROC y umbrales {\tiny\cite{Kay1998}}
-  \item \textbf{Neurobiología de tau}: Hiperfosforilación, ovillos neurofibrilares y patrón hipocampo→entorhinal→cortezas asociativas {\tiny\cite{Tolnay1999}}
-  \item \textbf{Implicación EEG}: Cambios en alfa/beta/gamma y sincronización funcional reflejan la disrupción de redes por tau {\tiny\cite{dePaula2009}}
+  \item \textbf{Detection theory}: Maximize \(P_{D}\) for a given \(P_{FA}\); evaluate ROC curves and thresholds {\tiny\cite{Kay1998}}
+  \item \textbf{Tau neurobiology}: Hyperphosphorylation, neurofibrillary tangles, and hippocampus→entorhinal→associative cortex progression {\tiny\cite{Tolnay1999}}
+  \item \textbf{EEG implication}: Changes in alpha/beta/gamma and functional synchronization reflect tau-driven network disruption {\tiny\cite{dePaula2009}}
 \end{itemize}
 \end{frame}
 
-% ---- State of the art ----
-\section{State of the art}
-\begin{frame}{State of the art}
+% ---- State of the Art ----
+\section{State of the Art}
+\begin{frame}{State of the Art}
 \scriptsize
-\renewcommand{\arraystretch}{0.8} % Ajusta el espacio entre filas si es necesario
+\renewcommand{\arraystretch}{0.8} % Adjust row spacing if needed
 \vspace{-0.8cm}
 \begin{table}
 \centering
 \begin{tabular}{p{2.6cm} p{2.6cm} p{2.6cm} p{2.6cm}}
-\textbf{Enfoque / Recurso} & \textbf{Características clave} & \textbf{Ventajas} & \textbf{Limitaciones} \\
+\textbf{Approach / Resource} & \textbf{Key features} & \textbf{Advantages} & \textbf{Limitations} \\
 \hline
-EEGNet {\tiny\cite{Lawhern2018}} & CNN compacta con convoluciones separables & Generaliza con pocos datos & Interpretabilidad limitada por canal/banda \\
+EEGNet {\tiny\cite{Lawhern2018}} & Compact CNN with separable convolutions & Generalizes with few data & Limited interpretability by channel/band \\
 \hline
-Shallow ConvNet {\tiny\cite{Schirrmeister2017}} & Arquitectura superficial para ritmos mu/beta & Baseline reproducible en BCI & Sensible a ruido y variabilidad intersujeto \\
+Shallow ConvNet {\tiny\cite{Schirrmeister2017}} & Shallow architecture for mu/beta rhythms & Reproducible baseline in BCI & Sensitive to noise and inter-subject variability \\
 \hline
-CNN + AEC/PLV {\tiny\cite{Ajra2023}} & Conectividad funcional para AD vs FTD & Alta exactitud en clasificación clínica & No explora biomarcadores tau directamente \\
+CNN + AEC/PLV {\tiny\cite{Ajra2023}} & Functional connectivity for AD vs FTD & High accuracy in clinical classification & Does not directly explore tau biomarkers \\
 \hline
-Biomarcadores tau {\tiny\cite{dePaula2009}} & PET y LCR como gold standard & Alta especificidad & Costosos e invasivos \\
+Tau biomarkers {\tiny\cite{dePaula2009}} & PET and CSF as gold standard & High specificity & Costly and invasive \\
 \hline
-Dataset clínico Alzheimer/FTD {\tiny\cite{MDPI2023}} & EEG clínico en reposo, 88 sujetos (AD, FTD, controles) & Datos reales, formato BIDS, accesible & Tamaño limitado, variabilidad clínica \\
+Clinical Alzheimer/FTD dataset {\tiny\cite{MDPI2023}} & Resting EEG, 88 subjects (AD, FTD, controls) & Real data, BIDS format, accessible & Limited size, clinical variability \\
 \hline
-BCI Competition IV {\tiny\cite{Blankertz2008}} & Datasets estandarizados de EEG/MEG/ECoG para clasificación & Benchmark internacional, comparabilidad de algoritmos & No enfocado en demencia, contexto experimental \\
+BCI Competition IV {\tiny\cite{Blankertz2008}} & Standardized EEG/MEG/ECoG datasets for classification & International benchmark, algorithm comparability & Not focused on dementia, experimental context \\
 \hline
 \end{tabular}
 \end{table}
 
 \vspace{-0.3cm}
-\textbf{Brecha actual:} Falta conexión directa entre modelos deep-EEG y biomarcadores tau funcionales. Se requiere validación clínica con interpretabilidad por canal/banda.
+\textbf{Current gap:} Missing a direct connection between deep-EEG models and functional tau biomarkers. Clinical validation with channel/band interpretability is required.
 \end{frame}
-
 
 
 % ---- Novelty ----
 % \section{Novelty}
 \begin{frame}{Novelty}
 \begin{itemize}
-  \item \textbf{Innovación}: Integrar neurobiología de tau con detección funcional en EEG mediante CNN compactas como EEGNet y ShallowConvNet {\tiny\cite{Ajra2023,Lawhern2018}}
-  \item \textbf{Etiqueta del estudio}: Propuesta de biomarcador EEG funcional no invasivo para progresión clínica de Alzheimer
-  \item \textbf{Evaluación}: Accuracy, F1 macro, AUC ROC, \( P_D \), \( P_{FA} \); mapas de importancia por canal y banda {\tiny\cite{Kay1998}}
-  \item \textbf{Conexión}: El pipeline propuesto permite vincular patrones EEG con trayectorias de tau, reforzando la hipótesis funcional
+  \item \textbf{Innovation}: Integrate tau neurobiology with functional EEG detection using compact CNNs such as EEGNet and ShallowConvNet {\tiny\cite{Ajra2023,Lawhern2018}}
+  \item \textbf{Study label}: Proposal of a non-invasive functional EEG biomarker for Alzheimer’s clinical progression
+  \item \textbf{Evaluation}: Accuracy, macro F1, ROC AUC, \( P_D \), \( P_{FA} \); channel and band importance maps {\tiny\cite{Kay1998}}
+  \item \textbf{Connection}: The proposed pipeline allows linking EEG patterns with tau trajectories, reinforcing the functional hypothesis
 \end{itemize}
 \end{frame}
 
@@ -255,31 +255,32 @@ BCI Competition IV {\tiny\cite{Blankertz2008}} & Datasets estandarizados de EEG/
 \section{Objectives}
 \begin{frame}{Objectives}
 \begin{itemize}
-  \item \textbf{General}: Desarrollar y validar un modelo EEG (EEGNet vs Shallow) para detectar patrones asociados a tau y progresión de Alzheimer {\tiny\cite{Lawhern2018,Schirrmeister2017}}
-  \item \textbf{Específicos}:
+  \item \textbf{General}: Develop and validate an EEG model (EEGNet vs Shallow) to detect patterns associated with tau and Alzheimer’s progression {\tiny\cite{Lawhern2018,Schirrmeister2017}}
+  \item \textbf{Specific}:
     \begin{itemize}
-      \item Preprocesar EEG CN/MCI/AD y segmentar ventanas 2–4 s {\tiny\cite{Schirrmeister2017}}
-      \item Entrenar y comparar EEGNet vs Shallow ConvNet en clasificación CN vs AD y CN vs MCI {\tiny\cite{Lawhern2018}}
-      \item Interpretabilidad: analizar bandas y canales relevantes y su coincidencia con trayectorias tau {\tiny\cite{Ajra2023}}
-      \item Validar con severidad clínica (MMSE/MoCA) y, si hay, PET/LCR tau {\tiny\cite{dePaula2009}}
+      \item Preprocess CN/MCI/AD EEG and segment 2–4 s windows {\tiny\cite{Schirrmeister2017}}
+      \item Train and compare EEGNet vs Shallow ConvNet in CN vs AD and CN vs MCI classification {\tiny\cite{Lawhern2018}}
+      \item Interpretability: analyze relevant bands and channels and their correspondence with tau trajectories {\tiny\cite{Ajra2023}}
+      \item Validate with clinical severity (MMSE/MoCA) and, if available, PET/CSF tau {\tiny\cite{dePaula2009}}
     \end{itemize}
 \end{itemize}
 \end{frame}
+
 
 
 % ---- Experimental design ----
 \section{Methodology}
 \begin{frame}{Experimental design}
 \begin{itemize}
-  \item \textbf{Datos}: EEG multicanal CN/MCI/AD con metadatos clínicos; subcohorte PET/LCR si está disponible {\tiny\cite{Ajra2023}}
-  \item \textbf{Entradas}: Señales EEG (C×T), ventanas 2–4 s, normalización; opcional espectrogramas y matrices PLV/PLI {\tiny\cite{Lawhern2018,Schirrmeister2017}}
-  \item \textbf{Sensor}: Sistema 10–20 clínico (32–64 canales) {\tiny\cite{Schirrmeister2017}}
-  \item \textbf{Metodología}:
+  \item \textbf{Data}: Multichannel EEG CN/MCI/AD with clinical metadata; PET/CSF subcohort if available {\tiny\cite{Ajra2023}}
+  \item \textbf{Inputs}: EEG signals (C×T), 2–4 s windows, normalization; optional spectrograms and PLV/PLI matrices {\tiny\cite{Lawhern2018,Schirrmeister2017}}
+  \item \textbf{Sensor}: Clinical 10–20 system (32–64 channels) {\tiny\cite{Schirrmeister2017}}
+  \item \textbf{Methodology}:
     \begin{itemize}
-      \item Clásicos: PSD, PLV/PLI + SVM/LDA, curvas ROC {\tiny\cite{Kay1998}}
-      \item IA: EEGNet y Shallow ConvNet; opcional GCN sobre conectividad {\tiny\cite{Lawhern2018,Ajra2023}}
+      \item Classical: PSD, PLV/PLI + SVM/LDA, ROC curves {\tiny\cite{Kay1998}}
+      \item AI: EEGNet and Shallow ConvNet; optional GCN on connectivity {\tiny\cite{Lawhern2018,Ajra2023}}
     \end{itemize}
-  \item \textbf{Validación}: k-fold por sujeto; métricas accuracy, F1, AUC, \(P_D\), \(P_{FA}\); mapas de saliencia {\tiny\cite{Kay1998,Lawhern2018}}
+  \item \textbf{Validation}: Subject-wise k-fold; metrics Accuracy, F1, AUC, \(P_D\), \(P_{FA}\); saliency maps {\tiny\cite{Kay1998,Lawhern2018}}
 \end{itemize}
 \end{frame}
 
@@ -287,32 +288,34 @@ BCI Competition IV {\tiny\cite{Blankertz2008}} & Datasets estandarizados de EEG/
 % \section{Papers}
 \begin{frame}{Papers on EEG mapping with AI}
 \begin{itemize}
-  \item \textbf{Lawhern et al. 2018 (EEGNet)}: Multi-paradigma BCI, AUC/kappa, compacto, sensible al preprocesamiento {\tiny\cite{Lawhern2018}}
-  \item \textbf{Schirrmeister et al. 2017 (Shallow/DeepConvNet)}: BCI IV-2a, intra- y cross-subject, baseline reproducible, necesita ajuste {\tiny\cite{Schirrmeister2017}}
-  \item \textbf{Ajra et al. 2023 (Demencia + conectividad)}: EEG clínico AD/FTD vs HC, AEC/PLV, alta exactitud, falta vínculo con tau {\tiny\cite{Ajra2023}}
+  \item \textbf{Lawhern et al. 2018 (EEGNet)}: Multi-paradigm BCI, AUC/kappa, compact, sensitive to preprocessing {\tiny\cite{Lawhern2018}}
+  \item \textbf{Schirrmeister et al. 2017 (Shallow/DeepConvNet)}: BCI IV-2a, intra- and cross-subject, reproducible baseline, requires adjustment {\tiny\cite{Schirrmeister2017}}
+  \item \textbf{Ajra et al. 2023 (Dementia + connectivity)}: Clinical EEG AD/FTD vs HC, AEC/PLV, high accuracy, lacks direct tau link {\tiny\cite{Ajra2023}}
 \end{itemize}
 \end{frame}
+
 
 % --- Datasets ---
 % \section{Datasets}
 \begin{frame}{Datasets}
   \begin{itemize}
-  \item EEG clínico CN/MCI/AD (32–64 canales, sistema 10–20), organizado en BIDS {\tiny\cite{gil2023dataset, schirrmeister2017deep}}.
-  \item Subcohorte con PET/LCR tau (si disponible); metadatos MMSE/MoCA {\tiny\cite{depaula2009tau, ajra2023deep}}.
-  \item Dataset BCI IV-2a para validación técnica inicial {\tiny\cite{blankertz2008bci}}.
-  \item 88 sujetos: CN, AD, FTD; balance clínico documentado {\tiny\cite{gil2023dataset}}.
-  \item Validación cruzada por sujeto; segmentación en ventanas de 2 s {\tiny\cite{lawhern2018eegnet, schirrmeister2017deep}}.
+  \item Clinical EEG CN/MCI/AD (32–64 channels, 10–20 system), organized in BIDS {\tiny\cite{gil2023dataset, schirrmeister2017deep}}.
+  \item Subcohort with PET/CSF tau (if available); MMSE/MoCA metadata {\tiny\cite{depaula2009tau, ajra2023deep}}.
+  \item BCI IV-2a dataset for initial technical validation {\tiny\cite{blankertz2008bci}}.
+  \item 88 subjects: CN, AD, FTD; documented clinical balance {\tiny\cite{gil2023dataset}}.
+  \item Subject-wise cross-validation; segmentation into 2 s windows {\tiny\cite{lawhern2018eegnet, schirrmeister2017deep}}.
 \end{itemize}
 \end{frame}
 
-% --- Methodology (horizontal, compacto y con colores) ---
+
+% --- Methodology (horizontal, compact and with colors) ---
 \begin{frame}{Methodology}
 \centering
-\vspace{-0.5cm} % Ajusta verticalmente si lo necesitas
+\vspace{-0.5cm} % Adjust vertically if needed
 \resizebox{0.90\textwidth}{!}{%
 \begin{tikzpicture}[node distance=2cm, auto]
 
-% Estilos por fase con colores
+% Styles per phase with colors
 \tikzstyle{datosblock} = [rectangle, draw, rounded corners, fill=blue!20,
                           text centered, align=center,
                           minimum height=1.2cm, minimum width=3.5cm]
@@ -329,46 +332,46 @@ BCI Competition IV {\tiny\cite{Blankertz2008}} & Datasets estandarizados de EEG/
                          text centered, align=center,
                          minimum height=1.2cm, minimum width=4.5cm]
 
-% Nodos en horizontal
+% Nodes in horizontal
 \node[datosblock] (datos) {
-  \textbf{Datos}\\
+  \textbf{Data}\\
   EEG CN/MCI/AD\\
-  Sistema 10--20, 32--64 canales\\
-  Formato BIDS
+  10--20 system, 32--64 channels\\
+  BIDS format
 };
 
 \node[preprocblock, right=of datos] (preproc) {
-  \textbf{Preprocesamiento}\\
-  Ventanas de 2 s\\
-  Filtro 1--40 Hz\\
-  Normalización trial-wise
+  \textbf{Preprocessing}\\
+  2 s windows\\
+  1--40 Hz filter\\
+  Trial-wise normalization
 };
 
 \node[tecblock, right=of preproc, yshift=3cm] (faseTec) {
-  \textbf{Fase técnica}\\
+  \textbf{Technical phase}\\
   A01--A09, 50 trials\\
   EEGNet (dropout 0.25, LR 0.001)\\
   ShallowConvNet (dropout 0.5)
 };
 
 \node[clinblock, right=of preproc, yshift=-3cm] (faseClin) {
-  \textbf{Fase clínica}\\
-  Sujeto CLINICO\\
+  \textbf{Clinical phase}\\
+  CLINICO subject\\
   AMP, batch 64–512, LR 0.0005\\
-  Tiempos hasta 2084 s
+  Durations up to 2084 s
 };
 
 \node[evalblock, right=10cm of preproc] (eval) {
-  \textbf{Evaluación}\\
-  Accuracy, F1 macro, AUC ROC\\
+  \textbf{Evaluation}\\
+  Accuracy, macro F1, ROC AUC\\
   \( P_D \), \( P_{FA} \)\\
-  Mapas por canal/banda\\
-  Pérdida entrenamiento/validación\\
-  Hiperparámetros por sujeto\\
-  Observaciones por ejecución
+  Channel/band maps\\
+  Training/validation loss\\
+  Subject hyperparameters\\
+  Run observations
 };
 
-% Conexiones
+% Connections
 \draw[->, thick] (datos) -- (preproc);
 \draw[->, thick] (preproc.east) -- (eval.west);
 \draw[->, thick] (preproc) -- (faseTec.west);
@@ -381,20 +384,21 @@ BCI Competition IV {\tiny\cite{Blankertz2008}} & Datasets estandarizados de EEG/
 
 \vspace{0.1cm}
 \small
-\begin{block}{Explicación}
+\begin{block}{Notes}
 \begin{itemize}
-  \item Se parte de datos EEG clínicos (CN/MCI/AD) en formato BIDS.
-  \item Las señales se preprocesan con segmentación, filtrado y normalización.
-  \item Se entrenan modelos compactos (EEGNet y ShallowConvNet) en fases técnica y clínica.
-  \item La evaluación incluye métricas (Accuracy, F1, AUC), pérdidas y observaciones por sujeto.
+  \item Start from clinical EEG data (CN/MCI/AD) in BIDS format.
+  \item Signals are preprocessed with segmentation, filtering, and normalization.
+  \item Compact models (EEGNet and ShallowConvNet) are trained in technical and clinical phases.
+  \item Evaluation includes metrics (Accuracy, F1, AUC), losses, and subject-wise observations.
 \end{itemize}
 \end{block}
 
 \end{frame}
 
+
 % --- Results ---
 \section{Results}
-\begin{frame}{Resultados por sujeto y modelo}
+\begin{frame}{Results by subject and model}
 \scriptsize
 \renewcommand{\arraystretch}{1}
 \vspace{-0.5cm}
@@ -403,38 +407,39 @@ BCI Competition IV {\tiny\cite{Blankertz2008}} & Datasets estandarizados de EEG/
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|p{5cm}|}
 \hline
-\textbf{Sujeto} & \textbf{Modelo} & \textbf{Accuracy (\%)} & \textbf{Val Loss} & \textbf{Observaciones} \\
+\textbf{Subject} & \textbf{Model} & \textbf{Accuracy (\%)} & \textbf{Val Loss} & \textbf{Notes} \\
 \hline
-A01 & \cellcolor{blue!30}EEGNet & 72.73 & 0.8028 & Segmentación automática (Mejor) \\
-A01 & \cellcolor{green!15}ShallowConvNet & 45.45 & 1.4192 & Segmentación automática \\
-A02 & \cellcolor{blue!30}EEGNet & 92.31 & 0.4277 & Segmentación automática (Mejor) \\
-A02 & \cellcolor{green!15}ShallowConvNet & 76.92 & 1.7499 & Segmentación automática \\
-A03 & \cellcolor{blue!30}EEGNet & 84.62 & 0.7852 & Segmentación automática (Mejor: menor pérdida) \\
-A03 & \cellcolor{green!15}ShallowConvNet & 84.62 & 1.3167 & Segmentación automática \\
-A04 & \cellcolor{blue!30}EEGNet & 93.75 & 0.4424 & Segmentación automática (Mejor) \\
-A04 & \cellcolor{green!15}ShallowConvNet & 75.00 & 2.6222 & Segmentación automática \\
-A05 & \cellcolor{blue!30}EEGNet & 90.62 & 0.4063 & Segmentación automática (Mejor) \\
-A05 & \cellcolor{green!15}ShallowConvNet & 81.25 & 0.8011 & Segmentación automática \\
-A06 & \cellcolor{blue!30}EEGNet & 93.75 & 0.3187 & Segmentación automática (Mejor) \\
-A06 & \cellcolor{green!15}ShallowConvNet & 62.50 & 1.9865 & Segmentación automática \\
-A07 & \cellcolor{blue!30}EEGNet & 87.50 & 0.5173 & Segmentación automática (Mejor) \\
-A07 & \cellcolor{green!15}ShallowConvNet & 58.33 & 1.4671 & Segmentación automática \\
-A08 & \cellcolor{blue!30}EEGNet & 93.75 & 0.2747 & Segmentación automática (Mejor) \\
-A08 & \cellcolor{green!15}ShallowConvNet & 71.88 & 1.6626 & Segmentación automática \\
-A09 & \cellcolor{blue!30}EEGNet & 96.88 & 0.1830 & Segmentación automática (Mejor) \\
-A09 & \cellcolor{green!15}ShallowConvNet & 50.00 & 1.0928 & Segmentación automática \\
-CLINICO & \cellcolor{blue!30}EEGNet-Clinico & 97.31 & 0.0931 & AMP, batch 128, tiempos promedio: 306.91 s (Mejor) \\
-CLINICO & \cellcolor{green!15}ShallowConvNet-Clinico & 91.66 & 0.2624 & AMP, batch 512, tiempos promedio: 297.72 s \\
+A01 & \cellcolor{blue!30}EEGNet & 72.73 & 0.8028 & Automatic segmentation (Best) \\
+A01 & \cellcolor{green!15}ShallowConvNet & 45.45 & 1.4192 & Automatic segmentation \\
+A02 & \cellcolor{blue!30}EEGNet & 92.31 & 0.4277 & Automatic segmentation (Best) \\
+A02 & \cellcolor{green!15}ShallowConvNet & 76.92 & 1.7499 & Automatic segmentation \\
+A03 & \cellcolor{blue!30}EEGNet & 84.62 & 0.7852 & Automatic segmentation (Best: lower loss) \\
+A03 & \cellcolor{green!15}ShallowConvNet & 84.62 & 1.3167 & Automatic segmentation \\
+A04 & \cellcolor{blue!30}EEGNet & 93.75 & 0.4424 & Automatic segmentation (Best) \\
+A04 & \cellcolor{green!15}ShallowConvNet & 75.00 & 2.6222 & Automatic segmentation \\
+A05 & \cellcolor{blue!30}EEGNet & 90.62 & 0.4063 & Automatic segmentation (Best) \\
+A05 & \cellcolor{green!15}ShallowConvNet & 81.25 & 0.8011 & Automatic segmentation \\
+A06 & \cellcolor{blue!30}EEGNet & 93.75 & 0.3187 & Automatic segmentation (Best) \\
+A06 & \cellcolor{green!15}ShallowConvNet & 62.50 & 1.9865 & Automatic segmentation \\
+A07 & \cellcolor{blue!30}EEGNet & 87.50 & 0.5173 & Automatic segmentation (Best) \\
+A07 & \cellcolor{green!15}ShallowConvNet & 58.33 & 1.4671 & Automatic segmentation \\
+A08 & \cellcolor{blue!30}EEGNet & 93.75 & 0.2747 & Automatic segmentation (Best) \\
+A08 & \cellcolor{green!15}ShallowConvNet & 71.88 & 1.6626 & Automatic segmentation \\
+A09 & \cellcolor{blue!30}EEGNet & 96.88 & 0.1830 & Automatic segmentation (Best) \\
+A09 & \cellcolor{green!15}ShallowConvNet & 50.00 & 1.0928 & Automatic segmentation \\
+CLINICO & \cellcolor{blue!30}EEGNet-Clinical & 97.31 & 0.0931 & AMP, batch 128, average time: 306.91 s (Best) \\
+CLINICO & \cellcolor{green!15}ShallowConvNet-Clinical & 91.66 & 0.2624 & AMP, batch 512, average time: 297.72 s \\
 \hline
 \end{tabular}
 }
-\caption{\tiny Comparación de desempeño por sujeto y modelo. El mejor modelo por sujeto está resaltado con color más intenso.}
+\caption{\tiny Performance comparison by subject and model. The best model per subject is highlighted with a more intense color.}
 \end{table}
 \end{frame}
 
+
 % --- Results Heatmap ---
 %\section{Results}
-\begin{frame}{Resultados por sujeto y modelo (Heatmap Accuracy)}
+\begin{frame}{Results by subject and model (Heatmap Accuracy)}
 \scriptsize
 \renewcommand{\arraystretch}{1.1}
 \vspace{-0.5cm}
@@ -443,52 +448,49 @@ CLINICO & \cellcolor{green!15}ShallowConvNet-Clinico & 91.66 & 0.2624 & AMP, bat
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|p{5cm}|}
 \hline
-\textbf{Sujeto} & \textbf{Modelo} & \textbf{Accuracy (\%)} & \textbf{Val Loss} & \textbf{Observaciones} \\
+\textbf{Subject} & \textbf{Model} & \textbf{Accuracy (\%)} & \textbf{Val Loss} & \textbf{Notes} \\
 \hline
-A01 & EEGNet & \cellcolor{yellow!30}72.73 & 0.8028 & Segmentación automática \\
-A01 & ShallowConvNet & \cellcolor{red!30}45.45 & 1.4192 & Segmentación automática \\
-A02 & EEGNet & \cellcolor{green!30}92.31 & 0.4277 & Segmentación automática \\
-A02 & ShallowConvNet & \cellcolor{yellow!30}76.92 & 1.7499 & Segmentación automática \\
-A03 & EEGNet & \cellcolor{yellow!30}84.62 & 0.7852 & Segmentación automática \\
-A03 & ShallowConvNet & \cellcolor{yellow!30}84.62 & 1.3167 & Segmentación automática \\
-A04 & EEGNet & \cellcolor{green!30}93.75 & 0.4424 & Segmentación automática \\
-A04 & ShallowConvNet & \cellcolor{yellow!30}75.00 & 2.6222 & Segmentación automática \\
-A05 & EEGNet & \cellcolor{green!30}90.62 & 0.4063 & Segmentación automática \\
-A05 & ShallowConvNet & \cellcolor{yellow!30}81.25 & 0.8011 & Segmentación automática \\
-A06 & EEGNet & \cellcolor{green!30}93.75 & 0.3187 & Segmentación automática \\
-A06 & ShallowConvNet & \cellcolor{red!30}62.50 & 1.9865 & Segmentación automática \\
-A07 & EEGNet & \cellcolor{yellow!30}87.50 & 0.5173 & Segmentación automática \\
-A07 & ShallowConvNet & \cellcolor{red!30}58.33 & 1.4671 & Segmentación automática \\
-A08 & EEGNet & \cellcolor{green!30}93.75 & 0.2747 & Segmentación automática \\
-A08 & ShallowConvNet & \cellcolor{yellow!30}71.88 & 1.6626 & Segmentación automática \\
-A09 & EEGNet & \cellcolor{green!30}96.88 & 0.1830 & Segmentación automática \\
-A09 & ShallowConvNet & \cellcolor{red!30}50.00 & 1.0928 & Segmentación automática \\
-CLINICO & EEGNet-Clinico & \cellcolor{green!30}97.31 & 0.0931 & AMP, batch 128, tiempos promedio: 306.91 s \\
-CLINICO & ShallowConvNet-Clinico & \cellcolor{green!30}91.66 & 0.2624 & AMP, batch 512, tiempos promedio: 297.72 s \\
+A01 & EEGNet & \cellcolor{yellow!30}72.73 & 0.8028 & Automatic segmentation \\
+A01 & ShallowConvNet & \cellcolor{red!30}45.45 & 1.4192 & Automatic segmentation \\
+A02 & EEGNet & \cellcolor{green!30}92.31 & 0.4277 & Automatic segmentation \\
+A02 & ShallowConvNet & \cellcolor{yellow!30}76.92 & 1.7499 & Automatic segmentation \\
+A03 & EEGNet & \cellcolor{yellow!30}84.62 & 0.7852 & Automatic segmentation \\
+A03 & ShallowConvNet & \cellcolor{yellow!30}84.62 & 1.3167 & Automatic segmentation \\
+A04 & EEGNet & \cellcolor{green!30}93.75 & 0.4424 & Automatic segmentation \\
+A04 & ShallowConvNet & \cellcolor{yellow!30}75.00 & 2.6222 & Automatic segmentation \\
+A05 & EEGNet & \cellcolor{green!30}90.62 & 0.4063 & Automatic segmentation \\
+A05 & ShallowConvNet & \cellcolor{yellow!30}81.25 & 0.8011 & Automatic segmentation \\
+A06 & EEGNet & \cellcolor{green!30}93.75 & 0.3187 & Automatic segmentation \\
+A06 & ShallowConvNet & \cellcolor{red!30}62.50 & 1.9865 & Automatic segmentation \\
+A07 & EEGNet & \cellcolor{yellow!30}87.50 & 0.5173 & Automatic segmentation \\
+A07 & ShallowConvNet & \cellcolor{red!30}58.33 & 1.4671 & Automatic segmentation \\
+A08 & EEGNet & \cellcolor{green!30}93.75 & 0.2747 & Automatic segmentation \\
+A08 & ShallowConvNet & \cellcolor{yellow!30}71.88 & 1.6626 & Automatic segmentation \\
+A09 & EEGNet & \cellcolor{green!30}96.88 & 0.1830 & Automatic segmentation \\
+A09 & ShallowConvNet & \cellcolor{red!30}50.00 & 1.0928 & Automatic segmentation \\
+CLINICO & EEGNet-Clinical & \cellcolor{green!30}97.31 & 0.0931 & AMP, batch 128, average time: 306.91 s \\
+CLINICO & ShallowConvNet-Clinical & \cellcolor{green!30}91.66 & 0.2624 & AMP, batch 512, average time: 297.72 s \\
 \hline
 \end{tabular}
 }
-\caption{\tiny Heatmap de Accuracy: verde >90\%, amarillo 70–90\%, rojo <70\%.}
+\caption{\tiny Accuracy heatmap: green >90\%, yellow 70–90\%, red <70\%.}
 \end{table}
 \end{frame}
-
 
 
 % --- Limitations ---
 % \section{Limitations}
 \begin{frame}{Limitations}
   \begin{itemize}
-  \item Alta variabilidad inter-sujeto en EEG → afecta generalización de modelos entre sujetos.
-  \item Dataset clínico reducido → limita robustez estadística y validación cruzada.
-  \item Interpretabilidad limitada de CNN → se requieren mapas por canal/banda para análisis clínico.
-  \item Desbalance de clases y pocas muestras por clase → afecta estratificación y estabilidad en validación.
-  \item Sensibilidad de ShallowConvNet al ruido → sobreajuste evidente en varios sujetos.
-  \item Ausencia de biomarcadores estructurales (PET/LCR) → limita validación cruzada funcional.
-  \item Dependencia del preprocesamiento → segmentación y normalización influyen en rendimiento.
-  \item Costo computacional en fase clínica → AMP requiere tuning y tiempos por época elevados.
+  \item High inter-subject variability in EEG → affects generalization of models across subjects.
+  \item Reduced clinical dataset → limits statistical robustness and cross-validation.
+  \item Limited CNN interpretability → channel/band maps are required for clinical analysis.
+  \item Class imbalance and few samples per class → affects stratification and validation stability.
+  \item ShallowConvNet sensitivity to noise → overfitting evident in several subjects.
+  \item Absence of structural biomarkers (PET/CSF) → limits functional cross-validation.
+  \item Preprocessing dependency → segmentation and normalization influence performance.
+  \item Computational cost in clinical phase → AMP requires tuning and longer epoch times.
 \end{itemize}
-
-
 \end{frame}
 
 % --- Conclusions ---
@@ -497,51 +499,50 @@ CLINICO & ShallowConvNet-Clinico & \cellcolor{green!30}91.66 & 0.2624 & AMP, bat
 \small
 \vspace{-0.2cm}
 \begin{itemize}
-  \item EEGNet y ShallowConvNet son candidatos viables para biomarcadores EEG funcionales en demencia.
-  \item EEGNet mostró mayor robustez, precisión y estabilidad frente a ShallowConvNet en fases técnica y clínica.
-  \item Se alcanzó Accuracy >90\% en 8 de 10 sujetos con EEGNet, incluyendo fase clínica con AMP.
-  \item Los mapas por canal/banda permiten interpretar patrones funcionales vinculados a trayectorias tau.
-  \item El pipeline es reproducible, segmentado y adaptable a cohortes clínicas reales.
-  \item Las limitaciones actuales (variabilidad, tamaño, interpretabilidad) abren camino a integración multimodal con PET/LCR.
+  \item EEGNet and ShallowConvNet are viable candidates for EEG functional biomarkers in dementia.
+  \item EEGNet showed greater robustness, accuracy, and stability compared to ShallowConvNet in technical and clinical phases.
+  \item Accuracy >90\% was achieved in 8 of 10 subjects with EEGNet, including the clinical phase with AMP.
+  \item Channel/band maps allow interpretation of functional patterns linked to tau trajectories.
+  \item The pipeline is reproducible, segmented, and adaptable to real clinical cohorts.
+  \item Current limitations (variability, size, interpretability) open the way to multimodal integration with PET/CSF.
 \end{itemize}
 \vspace{0.3cm}
 \scriptsize
-\textit{Conclusión: los modelos compactos permiten detectar alteraciones funcionales en EEG clínico, con potencial como biomarcadores no invasivos vinculados a tau.}
+\textit{Conclusion: compact models allow detection of functional alterations in clinical EEG, with potential as non-invasive tau-linked biomarkers.}
 \end{frame}
 
 
-% --- Future work ---
-% \section{Future work}
-\begin{frame}{Future work}
+% --- Future Work ---
+% \section{Future Work}
+\begin{frame}{Future Work}
   \begin{itemize}
-  \item Extender el pipeline a más datasets clínicos con segmentación automática y validación por sujeto.
-  \item Integrar conectividad funcional (PLV/PLI) y arquitecturas GCN para análisis de redes neuronales.
-  \item Validar hallazgos funcionales con biomarcadores estructurales (PET tau, LCR tau) si están disponibles.
-  \item Explorar modelos multimodales que combinen EEG + tau + metadatos clínicos (MMSE, MoCA).
-  \item Optimizar entrenamiento clínico con AMP y batch tuning para escalabilidad en cohortes grandes.
-  \item Publicar mapas de saliencia por canal/banda como herramienta de interpretabilidad clínica.
+  \item Extend the pipeline to more clinical datasets with automatic segmentation and subject-wise validation.
+  \item Integrate functional connectivity (PLV/PLI) and GCN architectures for neural network analysis.
+  \item Validate functional findings with structural biomarkers (PET tau, CSF tau) if available.
+  \item Explore multimodal models combining EEG + tau + clinical metadata (MMSE, MoCA).
+  \item Optimize clinical training with AMP and batch tuning for scalability in large cohorts.
+  \item Publish channel/band saliency maps as a clinical interpretability tool.
 \end{itemize}
-
 \end{frame}
 
-% --- Academic products ---
+% --- Academic Products ---
 \begin{frame}{Academic Products}
 \small
 \vspace{-0.2cm}
 \begin{itemize}
-  \item \textbf{Monografía } sobre biomarcadores EEG funcionales en demencia.
-  \item \textbf{Repositorio GitHub} con código reproducible, segmentación automática, entrenamiento AMP y comparaciones por sujeto.\\
+  \item \textbf{Monograph} on functional EEG biomarkers in dementia.
+  \item \textbf{GitHub repository} with reproducible code, automatic segmentation, AMP training, and subject comparisons.\\
   \texttt{\href{https://github.com/ivansst773/EEGNet_ShallowConvNet_Monografia}{github.com/ivansst773/EEGNet\_ShallowConvNet\_Monografia}}
-  \item \textbf{Presentación interactiva en Streamlit Viewer} con visualizaciones, métricas y mapas por canal/banda.\\
+  \item \textbf{Interactive presentation in Streamlit Viewer} with visualizations, metrics, and channel/band maps.\\
   \texttt{\href{https://streamlit.io/view/ivansst773/eegnet_shallowconvnet_monografia}{streamlit.io/view/...}}
-  \item \textbf{Bitácora técnica} documentada por fecha, sujeto, modelo y configuración.\\
+  \item \textbf{Technical logbook} documented by date, subject, model, and configuration.\\
   \texttt{bitacora.md}
-  \item \textbf{Diagramas metodológicos en TikZ} con color institucional y narrativa clara.
-  \item \textbf{Resultados clínicos validados} con EEGNet y ShallowConvNet sobre cohortes CN/MCI/AD.
+  \item \textbf{Methodology diagrams in TikZ} with institutional color and clear narrative.
+  \item \textbf{Validated clinical results} with EEGNet and ShallowConvNet on CN/MCI/AD cohorts.
 \end{itemize}
 \vspace{0.3cm}
 \scriptsize
-\textit{Todos los productos están disponibles públicamente para consulta, validación y extensión futura.}
+\textit{All products are publicly available for consultation, validation, and future extension.}
 \end{frame}
 
 
@@ -550,15 +551,15 @@ CLINICO & ShallowConvNet-Clinico & \cellcolor{green!30}91.66 & 0.2624 & AMP, bat
 \small
 \vspace{-0.2cm}
 \begin{itemize}
-  \item Universidad Nacional de Colombia – Sede Manizales, por el respaldo académico y técnico.
-  \item Grupo de investigación, por el acompañamiento metodológico.
-  \item Profesor Andrés Marino Álvarez Meza, PhD, por su invaluable guía científica, clínica y computacional, así como por su constante apoyo en el ámbito académico y personal durante todo el proceso.
-  \item Comunidad académica y compañeros de semillero, por el intercambio de ideas y validación de resultados.
-  \item Familia, por el apoyo constante durante todas las etapas del proyecto.
+  \item National University of Colombia – Manizales Campus, for academic and technical support.
+  \item Research group, for methodological guidance.
+  \item Professor Andrés Marino Álvarez Meza, PhD, for his invaluable scientific, clinical, and computational guidance, as well as his constant academic and personal support throughout the process.
+  \item Academic community and research peers, for the exchange of ideas and validation of results.
+  \item Family, for their constant support during all stages of the project.
 \end{itemize}
 \vspace{0.3cm}
 \scriptsize
-\textit{Este trabajo es resultado de un esfuerzo colectivo, técnico y humano, con impacto académico y clínico.}
+\textit{This work is the result of a collective, technical, and human effort, with academic and clinical impact.}
 \end{frame}
 
 
@@ -566,15 +567,15 @@ CLINICO & ShallowConvNet-Clinico & \cellcolor{green!30}91.66 & 0.2624 & AMP, bat
 \begin{frame}{Acknowledgements}
 \centering
 \vspace{1cm}
-{\Huge \textbf{¡Gracias!}}
+{\Huge \textbf{Thank you!}}
 
 \vspace{1cm}
-{\large \textit{Este trabajo representa un paso hacia biomarcadores EEG funcionales accesibles, reproducibles y clínicamente relevantes.}}
+{\large \textit{This work represents a step toward accessible, reproducible, and clinically relevant functional EEG biomarkers.}}
 
 \vspace{0.5cm}
 \textbf{Edgar Iván Calpa Cuacialpud} \\
-Universidad Nacional de Colombia – Sede Manizales \\
-\texttt{eicalpac@unal.edu.co}
+National University of Colombia – Manizales Campus \\
+\texttt{eicalpac@unal.edu.co} \\
 \texttt{\href{https://github.com/ivansst773/EEGNet_ShallowConvNet_Monografia}{github.com/ivansst773/EEGNet\_ShallowConvNet\_Monografia}}
 \end{frame}
 
